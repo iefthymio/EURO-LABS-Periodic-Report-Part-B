@@ -1,0 +1,128 @@
+%% $Id: istprog.sty,v 1.1 2006/10/17 11:13:53 poller Exp $
+%%
+%\usepackage{xstring}
+\usepackage{lastpage}
+\usepackage{stringstrings}
+\usepackage{ifthen}
+\usepackage{amssymb}
+
+% redefine elements styles
+ \@ifclassloaded{report}{
+    \renewcommand{\section}{\@startsection {section}{1}{\z@}%
+          {-3.5ex \@plus -1ex \@minus -.2ex}%
+          {2.3ex \@plus.2ex}%
+          {\normalfont\fontsize{18}{23}\sffamily\bfseries\color{myblue}}%
+	}
+
+    \renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+	          {-3.5ex \@plus -1ex \@minus -.2ex}%
+                  {2.3ex \@plus.2ex}
+		{\normalfont\fontsize{14}{18}\sffamily\bfseries\color{myblue}}}
+
+    \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
+	          {-3.5ex \@plus -1ex \@minus -.2ex}%
+                  {2.3ex \@plus.2ex}
+		{\normalfont\fontsize{12}{16}\sffamily\bfseries\color{myblue}}}
+
+    % \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}%
+                 % {3.25ex \@plus1ex \ at minus.2ex}%
+                 % {-1em}%
+                 % {\normalfont\normalsize\sffamily\bfseries}}
+}
+
+%%% Headers and footers
+\usepackage{fancyhdr}
+\fancyhf{}
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+    \fancyfoot[l]{{\color{myblue} $2^{nd}$ Periodic Report}}
+}
+\setlength{\headheight}{32.53278pt}
+\setlength{\footskip}{10pt} % Decrease the footskip (default is usually 12pt or more)
+
+% \addtolength{\topmargin}{-20.05278pt}
+\fancypagestyle{plain}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{0pt} % Footer rule thickness
+    \fancyhead[l]{\color{mygray} \small Project: [101057511] -- [EURO-LABS] -- [HORIZON-INFRA-2021-SERV-01]}
+    \fancyhead[r]{\includegraphics[height=1cm]{graphics/euro-labs-logo.png}}
+    \fancyfoot[l]{{\color{mygray} \small $2^{nd}$ Periodic Report}}
+    \fancyfoot[r]{{\color{mygray}\thepage{} of \textcolor{mygray}{\pageref{LastPage}}}}
+}
+% Custom landscape page style
+\fancypagestyle{landscape}{%
+    \fancyhf{} % Clear all headers/footers
+    \fancyhead[L]{\rotatebox{90}{\textbf{Header (Landscape)}}}
+    \fancyhead[C]{\rotatebox{90}{\thepage}}
+    \fancyfoot[R]{\rotatebox{90}{Footer in Landscape}}
+    \renewcommand{\headrulewidth}{0.4pt} % Optional: Add header line
+    \renewcommand{\footrulewidth}{0.4pt} % Optional: Add footer line
+}
+
+% Add a full line of text below the header
+\makeatletter
+\renewcommand{\headrule}{%
+  \hrule height 0pt % Removes the default rule
+  \vspace{0.2em}% Adds vertical space
+  \hbox to \headwidth{% Adjust to page width
+    \hfill \textcolor{mygray}{\small EU Grants: Periodic report(HE): V1.1 – 06.11.2023}%
+  }
+  \vspace{0.2em}% Adjust spacing below the text
+  \hrule height 0.4pt % Optional: re-add a horizontal line
+}
+\makeatother
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{plain}
+
+%% Stuff for other than in the identification page
+
+% \def\partners#1{\gdef\proj@partners{#1}}
+% \def\webAddress#1{\gdef\proj@web{#1}}
+% \def\principalContact#1{\gdef\proj@contact{#1}}
+% \def\logo#1{\gdef\proj@logo{#1}}
+
+% print my page layout information
+\def\mylayout{
+    \newpage  
+    \section*{Page Layout Parameters}
+    \begin{itemize}
+        \item \textbf{Paper Dimensions:}
+        \begin{itemize}
+            \item Paper width: \printlength{\paperwidth}
+            \item Paper height: \printlength{\paperheight}
+        \end{itemize}
+    
+        \item \textbf{Text Area:}
+        \begin{itemize}
+            \item Text width: \printlength{\textwidth}
+            \item Text height: \printlength{\textheight}
+        \end{itemize}
+    
+        \item \textbf{Margins:}
+        \begin{itemize}
+            \item Top margin: \printlength{\topmargin}
+            \item Left margin (odd pages): \printlength{\oddsidemargin}
+            \item Left margin (even pages): \printlength{\evensidemargin}
+        \end{itemize}
+    
+        \item \textbf{Header and Footer:}
+        \begin{itemize}
+            \item Header height: \printlength{\headheight}
+            \item Header separation (distance from text): \printlength{\headsep}
+            \item Footer separation (distance from text): \printlength{\footskip}
+        \end{itemize}
+    
+        \item \textbf{Paragraph Settings:}
+        \begin{itemize}
+            \item Paragraph indent: \printlength{\parindent}
+            \item Paragraph spacing: \printlength{\parskip}
+        \end{itemize}
+    \end{itemize}
+    \newpage
+}
+
+\endinput

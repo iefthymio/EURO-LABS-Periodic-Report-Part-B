@@ -1,0 +1,44 @@
+%
+% Definitions and acronyms
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Acronyms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\todo#1{{\color{myasparagus}\textbf{TODO:}{\it ``#1''}}}
+% \def\euro-labs{EURO-LABS}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Acronyms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage[automake, acronym]{glossaries}
+\usepackage[style=super,nonumberlist,acronym]{glossaries}
+\makeglossaries
+
+\renewcommand{\glossarypreamble}{\vspace*{-\baselineskip}}
+
+\renewcommand{\acronymname}{List of Acronyms}
+
+\renewcommand{\glsgroupskip}{}
+
+% \renewcommand{\glossarysection}[2]{%
+% \section*{\cftloftitlefont #1} % Use the same font as List of Tables
+%  \addcontentsline{toc}{section}{#1} % Add to the Table of Contents
+%  \vspace{-0.5cm} % Adjust vertical space after the title
+%}
+
+\newacronym{euro-labs}{EURO-LABS}{EUROpean Laboratories for Accelerator Based Science}
+\newacronym{RI}{RI}{Research Infrastructures}
+\newacronym{DMP}{DMP}{Data Management Plan}
+\newacronym{DoA}{DoA}{Description of Action}
+\newacronym{DoI}{DoI}{Digital Object Identifier}
+\newacronym{EU}{EU}{European Union}
+\newacronym{GA}{GA}{Grant Agreement}
+\newacronym{OA}{OA}{Open Access}
+\newacronym{RP}{RP}{Reporting Period}
+\newacronym{PM}{PM}{Person Month}
+\newacronym{WP}{WP}{Work Package}
+

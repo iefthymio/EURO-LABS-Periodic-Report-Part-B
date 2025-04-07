@@ -1,0 +1,373 @@
+%% euro-labs.sty
+%%
+%% Style file for documents of the embeddia project (adapted from hyperride.sty)
+%
+%%%%%%%%%%%%%%%%%%%%%
+% package description
+%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{euro-labs}[2025/01/01 euro-labs style sheet v1.0]
+% packages and includes
+
+\usepackage[a4paper,
+            % total={6in, 8in}
+            % top=2.00cm,
+            % left=2.00cm,
+            % right=2.00cm,
+            % bottom=2.00cm,
+            % headsep=0.50cm,
+            %footskip=0.5cm,
+            % showframe  % used to display the layout frames
+            margin=2.5cm
+            ]{geometry}
+       
+\input{istprog.sty}
+
+% \RequirePackage{a4wide}	% A4
+% \usepackage[tight]{minitoc}
+\usepackage{etoolbox}
+\usepackage{tocloft} % formatting of the table of contents.
+\usepackage[super]{nth}
+\usepackage[linktocpage=true]{hyperref}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{float}
+
+\usepackage{graphicx}
+\usepackage[most]{tcolorbox} % For colored boxes
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{wallpaper}
+\usepackage[format=hang,
+            font={small,it,color=myblue}, 
+            labelfont={color=myblue},
+            singlelinecheck=false]{caption}
+\usepackage{sfmath}
+\usepackage{apacite}
+\pagestyle{fancy}
+\usepackage[absolute]{textpos}
+\usepackage{array}	% tabs
+\usepackage{longtable}
+% \usepackage{ltablex}
+\usepackage{xltabular}
+\usepackage{enumitem}
+% \usepackage{lscape}    
+\usepackage{pdflscape}   % For landscape pages
+\usepackage{afterpage}   % For executing commands after the current page
+
+
+\usepackage[utf8]{inputenc}	% UTF8 package
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}		% common special chars
+\usepackage{amsmath}		% math formula
+\usepackage{fancybox}
+\usepackage{anyfontsize}	% fonts
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage[normalem]{ulem}
+\usepackage{cleveref}
+% \usepackage[printonlyused]{acronym}
+
+\usepackage{printlen}
+\uselengthunit{cm} % Set the unit to cm (you can change this to mm, in, etc.)
+
+\graphicspath{ {graphics/} }
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=black,      
+	citecolor=black,
+	urlcolor=blue,
+	pdftitle=2nd Periodic Report,
+	pdfauthor=EURO-LABS Consortium,
+	pdfsubject=EURO-LABS Project Deliverable,
+	pdfcreator=pdflatex,
+	pdfproducer=Overleaf,
+	pdfkeywords={Periodic Report, European Union (EU), Horizon, Project, EURO-LABS, GA 101057511, ΤΑ}
+}
+\usepackage[
+	type={CC},
+	modifier={by},
+	version={4.0},
+	imagewidth={6em},
+        ]{doclicense}
+
+\AtBeginDocument{\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{section}{\bibname}}{}{}}
+\typeout{Document Style `euro-labs' <01 Jan, 2025>.}
+
+% \def\deliv@checkmark{ x }
+% \DeclareOption{checkmark}{\def\deliv@checkmark{$\underline{\checkmark}$}}
+% \ExecuteOptions{checkmark}
+% \ProcessOptions
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\definecolor{myblack}{RGB}{0,0,0}
+\definecolor{myblue}{RGB}{42,46,128}
+\definecolor{myfont}{RGB}{54,54,54}
+\definecolor{myred}{RGB}{250,40,35}
+\definecolor{mygray}{RGB}{127,127,127}
+\definecolor{mylightgray}{RGB}{219,219,219}
+\definecolor{mylightergray}{RGB}{237,237,237}
+\definecolor{mycayenne}{RGB}{148,17,0}
+\definecolor{mycyan}{RGB}{118,214,255}
+\definecolor{myasparagus}{RGB}{146,144,0}
+
+\setlength{\parindent}{0pt}
+\usepackage[parfill]{parskip}
+
+%% title page
+%% 
+\input{istcover.sty}
+
+%%%%%%%% 
+% --- TOC, LOF, LOT customisation
+%%%%%%%%%
+
+% \mtcsetrules{*}{off}
+
+% toc design
+\def\settableofcontents{%}
+   % Basic TOC customization
+    \renewcommand{\cftsecfont}{\normalsize}
+    \renewcommand{\cftsubsecfont}{\small}
+    \renewcommand{\cftsubsubsecfont}{\scriptsize}
+
+    \renewcommand{\contentsname}{Table of Contents}
+    \renewcommand{\cfttoctitlefont}{\normalfont\fontsize{18}{23}\sffamily\bfseries\color{mycayenne}}
+    \setlength{\cftbeforetoctitleskip}{-0.4cm}
+    \setlength{\cftaftertoctitleskip}{3mm}
+    
+    \setlength{\cftbeforesecskip}{2mm}
+    \setlength{\cftbeforesubsecskip}{0.5mm}
+    \setlength{\cftbeforesubsubsecskip}{0.2mm}
+
+    % Correct TOC indentations
+    \setlength{\cftsecindent}{0mm}
+    \setlength{\cftsubsecindent}{4mm}
+    \setlength{\cftsubsubsecindent}{8mm}
+
+    % Correct page number font sizes
+    \renewcommand{\cftsecpagefont}{\normalsize}
+    \renewcommand{\cftsubsecpagefont}{\small}
+    \renewcommand{\cftsubsubsecpagefont}{\scriptsize}
+
+    % Adjust leader dot style
+    \renewcommand{\cftsecaftersnum}{.}
+    \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+    \renewcommand{\cftsubsecleader}{\small\cftdotfill{\cftsubsecdotsep}}
+    \renewcommand{\cftsubsubsecleader}{\scriptsize\cftdotfill{\cftsubsubsecdotsep}}
+
+    \renewcommand{\cftsecdotsep}{0.5}
+    \renewcommand{\cftsubsecdotsep}{0.5}
+    \renewcommand{\cftsubsubsecdotsep}{0.5}
+    
+    % Adjust section numbering width
+    \addtolength{\cftsecnumwidth}{-2mm}
+    \addtolength{\cftsubsecnumwidth}{-3mm}
+    \addtolength{\cftsubsubsecnumwidth}{-4mm}
+
+    \cftsetpnumwidth{5mm}
+
+    
+    % Paragraph level customisation
+    \renewcommand{\cftparagraphfont}{\scriptsize\itshape}
+    \renewcommand{\cftparagraphpagefont}{\scriptsize\itshape}
+    \setlength{\cftbeforeparagraphskip}{0.2mm}
+    \setlength{\cftparagraphindent}{10mm} % small bump up for visual match
+    \setlength{\cftparagraphnumwidth}{0mm} % no number anyway
+    \renewcommand{\cftparagraphleader}{\scriptsize\cftdotfill{\cftparagraphdotsep}}
+    \renewcommand{\cftparagraphdotsep}{0.5}
+}
+
+\def\setparttableofcontents{%
+    \renewcommand{\ptcSSfont}{\small}
+    \renewcommand{\ptcSfont}{\normalsize}
+    \renewcommand{\ptctitle}{Table of Contents (per part) }
+    \renewcommand{\ptifont}{\normalfont\fontsize{18}{23}\sffamily\bfseries\color{mycayenne}}
+    % \setlength{\mtcbeforetoctitleskip}{-0.4cm}
+    % \setlength{\mtcaftertoctitleskip}{3mm}
+    % \setlength{\mtctbeforesecskip}{2mm}
+    % \setlength{\cftbeforesubsecskip}{0.5mm}
+    % \setlength{\cftsecindent}{0mm}
+    % \setlength{\cftsubsecindent}{4mm}
+    % \setlength{\cftsubsubsecindent}{8mm}
+    % \renewcommand{\cftsecpagefont}{\normalsize}
+    % \renewcommand{\cftsubsecpagefont}{\small}
+    %\renewcommand{\cftsecaftersnum}{.}
+    % \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+    % \renewcommand{\cftsubsecleader}{\small\cftdotfill{\cftsubsecdotsep}}
+    % \renewcommand{\cftsecdotsep}{0.5}
+    % \renewcommand{\cftsubsecdotsep}{0.5}
+    % \renewcommand{\cftsubsubsecdotsep}{0.5}
+    % \addtolength{\cftsecnumwidth}{-2mm}
+    % \addtolength{\cftsubsecnumwidth}{-3mm}
+    % \addtolength{\cftsubsubsecnumwidth}{-5mm}
+    % \cftsetpnumwidth{5mm}
+}
+
+% lof design
+\def\setlistoffigures{%
+    \renewcommand{\cftfigfont}{\small}	
+    \renewcommand{\cftfigpagefont}{\small}	
+    \setlength{\cftfigindent}{0mm}	
+    \setlength{\cftbeforeloftitleskip}{-0.4cm}
+    \setlength{\cftafterloftitleskip}{3mm}
+    \renewcommand{\cftloftitlefont}{\normalfont\fontsize{18}{23}\sffamily\bfseries\color{mycayenne}}
+    \renewcommand{\cftfigleader}{\small\cftdotfill{\cftfigdotsep}}
+    \renewcommand{\cftfigdotsep}{\cftdotsep}
+    \renewcommand{\cftdotsep}{0.5}
+    \renewcommand*\cftfigpresnum{Figure~}
+    \settowidth{\cftfignumwidth}{\cftfigpresnum}
+    \addtolength{\cftfignumwidth}{5mm}
+    \renewcommand{\cftfigaftersnum}{:~}
+}
+
+% lot design
+\def\setlistoftables{%
+    \renewcommand{\cfttabfont}{\small}	
+    \renewcommand{\cfttabpagefont}{\small}	
+    \setlength{\cfttabindent}{0mm}
+    \setlength{\cftbeforelottitleskip}{-0.4cm}
+    \setlength{\cftafterlottitleskip}{3mm}
+    \renewcommand{\cftlottitlefont}{\normalfont\fontsize{18}{23}\sffamily\bfseries\color{mycayenne}}
+    \renewcommand{\cfttableader}{\small\cftdotfill{\cfttabdotsep}}
+    \renewcommand{\cfttabdotsep}{\cftdotsep}
+    \renewcommand{\cftdotsep}{0.5}
+    \renewcommand*\cfttabpresnum{Table~}
+    \settowidth{\cfttabnumwidth}{\cfttabpresnum}
+    \addtolength{\cfttabnumwidth}{5mm}
+    \renewcommand{\cfttabaftersnum}{:~} 
+}
+
+% New commands to create separate TOCs and LOFs
+% \newcommand{\parttoc}{%
+%  \begingroup
+%  \renewcommand{\contentsname}{Table of Contents for This Part}%
+%  \tableofcontents
+%  \endgroup
+%}
+
+%\newcommand{\partlof}{%
+%  \begingroup
+%  \renewcommand{\listfigurename}{List of Figures for This Part}%
+%  \listoffigures
+%  \endgroup
+%}
+
+% \logo{\includegraphics[scale=0.465]{graphics/euro-labs-logo}}
+
+\newcommand{\ignore}[1]{}
+
+% subsubsections processing
+\setcounter{secnumdepth}{3}	% numbering until subsubsections
+\setcounter{tocdepth}{4}	% toc depth
+
+\setcounter{topnumber}{20}
+\renewcommand{\topfraction}{.99}
+
+\setcounter{bottomnumber}{20}
+\renewcommand{\bottomfraction}{.99}
+
+\setcounter{totalnumber}{30}
+
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0}
+
+% font
+% \usepackage[scaled]{uarial}
+\usepackage[scaled]{helvet}
+\renewcommand*\rmdefault{phv}
+\renewcommand*\sfdefault{phv}
+\renewcommand*{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+
+% sections as chapters
+\renewcommand*\thesection{\arabic{section}}
+
+
+% non-numbered items in the TOC
+\newcommand{\tsection}[1]{%
+  \section*{#1}%
+  \addcontentsline{toc}{section}{#1}%
+}
+\newcommand{\tsubsection}[1]{%
+  \subsection*{\bf #1}%
+  \addcontentsline{toc}{subsection}{\protect\normalfont\protect\small #1}%
+}
+
+\newcommand{\tsubsubsection}[1]{%
+  \subsubsection*{\bf #1}%
+  \addcontentsline{toc}{subsubsection}{\protect\normalfont\protect\scriptsize #1}%
+}
+
+% color for table captions
+% \captionsetup[table]{labelfont={color=myblue},font={color=myblue}}
+
+% 
+\usepackage{sectsty}
+\chapterfont{\color{mycayenne}}  % sets colour of chapters
+\sectionfont{\color{mycayenne}}  
+\subsectionfont{\color{mycayenne}}
+\subsubsectionfont{\color{mycayenne}}
+
+
+\makeatletter
+    \def\thebibliography#1{\section*{References\@mkboth
+      {REFERENCES}{REFERENCES}}\list
+      {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+	\advance\leftmargin\labelsep
+	\usecounter{enumi}}
+	\def\newblock{\hskip .11em plus .33em minus .07em}
+	\sloppy\clubpenalty4000\widowpenalty4000
+	\sfcode`\.=1000\relax}
+\makeatother
+
+% Define a tcolorbox environment for the list
+\tcbset{
+    myliststyle/.style={
+        colback=mycyan!10, % Background color
+        colframe=mycayenne!50, % Border color
+        sharp corners, % Square corners
+        boxrule=1pt, % Border thickness
+        left=5pt, % Left padding
+        right=5pt, % Right padding
+        top=5pt, % Top padding
+        bottom=5pt % Bottom padding
+    },
+    myshadowed/.style={
+        enhanced,
+        frame hidden, % Hide outer frame
+        colframe=black!75, % Frame color
+        colback=blue!10, % Background color
+        boxrule=0.5mm, % Frame thickness
+        drop shadow, % Shadow enabled
+        arc=5mm, % Rounded corners
+        left=5mm, % Padding inside the box
+        right=5mm,
+    },
+    myframed/.style={
+        colframe=black, % Frame color
+        colback=red!5, % Background color
+        boxrule=0.5mm, % Frame thickness
+        arc=2mm, % Rounded corners
+        left=5mm, % Padding inside the box
+        right=5mm,
+    }
+}
+
+\def\projnote#1{%
+    \begin{tcolorbox}[myshadowed]
+      \emph{#1} % Placeholder text
+    \end{tcolorbox}
+}
+\endinput

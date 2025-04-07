@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EURO-LABS Reporting Part A 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{chapter}{0}
+\setcounter{figure}{0}
+
+\input{frontpage-partA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\setparttableofcontents
+\parttoc %if you want one
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% List of Figures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \partlof
+\partlof %if you want one
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% List of Tables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\partlot %if you want one
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Part A Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \mylayout
+\input{sections-partA/summary}
+
+\input{sections-partA/participants}
+
+% --- switch to landscape mode here 
+
+\newpage
+\paperwidth=\pdfpageheight
+\paperheight=\pdfpagewidth
+\pdfpageheight=\paperheight
+\pdfpagewidth=\paperwidth
+\headwidth=\textheight
+\begingroup
+    \vsize=\textwidth
+    \hsize=\textheight
+
+\input{sections-partA/mgmnt_and_implementation}
+
+\input{sections-partA/risks}
+
+\input{sections-partA/impact}
+
+\section{Publications}
+
+\section{Datasets}
+
+\section{Intelectual property rights (IPR)}
+
+\section{Standards}
+
+\section{Other results}
+
+\section{Dissemination and communication activiteis}
+
+\subsection{Dissemination activities}
+
+\subsection{Communication activities}
+
+\section{Impact}
+
+\section{Finanacial Support to third parties}
+
+\section{Research Infrastructure}
+
+\section{MSCA PF mobility declaration}
+
+\section{Msca DN and cofund mobility declaration}
+
+\section{Msca SE mobility declaration}
+
+\section{JU contributions}
+
+\endgroup
+
+\newpage
+\paperwidth=\pdfpageheight
+\paperheight=\pdfpagewidth
+\pdfpageheight=\paperheight
+\pdfpagewidth=\paperwidth
+\headwidth=\textwidth
+
+
+\pagestyle{plain} % REstore stylee

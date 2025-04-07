@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EURO-LABS Reporting Part B 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{chapter}{0}
+\setcounter{figure}{0}
+
+\input{frontpage-partB}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\ifbool{includeparta}{
+    \setparttableofcontents
+    \parttoc 
+    \partlof
+    \partlot
+}{
+    \settableofcontents
+    \tableofcontents
+    \newpage
+    \setlistoffigures
+    \listoffigures
+    \newpage
+    \setlistoftables
+    \listoftables
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% List of Abbreviations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+\input{sections/abbreviations}
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Deliverable Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \mylayout
+
+\input{sections/work-carried-out}
+% \input{sections/data-management}
+\input{sections/follow-up-reviews}
+\input{sections/exploitation}
+\input{sections/open-science}
+\input{sections/deviations}
+
+\input{annexes/annex-meetings}
+\input{annexes/annex-usp}
+\input{annexes/annex-projects}

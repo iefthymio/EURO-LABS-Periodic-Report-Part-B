@@ -1,0 +1,64 @@
+%% istcover.sty
+%%
+%% Cover page for EURO-LABS deliverables (adapted from HYPERRIDE)
+%%
+%% makefront
+%% Frontpage content
+%%
+\def\makefront{
+  % \newpage
+  % \newgeometry{top=8.5mm,left=8.5mm,right=15mm,bottom=-14mm}
+  % shadowed frame
+  % \ThisCenterWallPaper{1}{graphics/hyperride-coverbkg}
+  %	\global\@topnum\z@ % prevents figures from going at top of page
+  \thispagestyle{empty} % so we get no page number on title page
+  \setcounter{footnote}{0}
+  
+  \begin{center}
+    \includegraphics[height=2cm]{graphics/logo_ce.jpg}
+ 
+    \includegraphics[height=5cm]{graphics/eu-flag.png}
+
+    \vspace*{1.5cm}
+
+   {\Large Horizon Europe (HORIZON)
+
+    Euratom Research and Training \\\ Programme (EURATOM)}
+
+    \vspace*{1cm}
+    Periodic Report
+    
+    \vspace*{1cm}
+    Technical Report (Part A) \\
+    Technical Report (Part B) \\
+    Financial Report
+
+    \vspace*{4cm}
+    Version 1.1 \\
+    01 May 2023
+  \end{center}
+ 
+  \def\thefootnote{\fnsymbol{footnote}}
+  \def\@makefnmark{\hbox to 0pt{$^{\@thefnmark}$\hss}}
+  \null
+  
+  \clearpage
+  \restoregeometry
+  % reset footnote counter
+  \setcounter{footnote}{0}
+}
+%end of makefront
+
+%%
+%% \makecover
+%% cover page (front + back)
+%%
+\def\makecover{
+	\makefront
+}
+
+\newcommand\Thickvrule[1]{%
+	\multicolumn{1}{!{\vrule width 2pt}c!{\vrule width 1pt}}{#1}%
+}
+
+\endinput

@@ -33,6 +33,7 @@
 \usepackage{multirow}
 \usepackage{float}
 
+\usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage[most]{tcolorbox} % For colored boxes
 \usepackage{xcolor}
@@ -54,6 +55,8 @@
 % \usepackage{lscape}    
 \usepackage{pdflscape}   % For landscape pages
 \usepackage{afterpage}   % For executing commands after the current page
+\usepackage{sidecap}     % to allow figures with side caption
+\usepackage{siunitx}
 
 
 \usepackage[utf8]{inputenc}	% UTF8 package
@@ -178,15 +181,23 @@
 
     \cftsetpnumwidth{5mm}
 
-    
     % Paragraph level customisation
-    \renewcommand{\cftparagraphfont}{\scriptsize\itshape}
-    \renewcommand{\cftparagraphpagefont}{\scriptsize\itshape}
-    \setlength{\cftbeforeparagraphskip}{0.2mm}
-    \setlength{\cftparagraphindent}{10mm} % small bump up for visual match
-    \setlength{\cftparagraphnumwidth}{0mm} % no number anyway
-    \renewcommand{\cftparagraphleader}{\scriptsize\cftdotfill{\cftparagraphdotsep}}
-    \renewcommand{\cftparagraphdotsep}{0.5}
+    \renewcommand{\cftparafont}{\scriptsize\itshape}
+    \renewcommand{\cftparapagefont}{\scriptsize\itshape}
+    \setlength{\cftbeforeparaskip}{0.2mm}
+    \setlength{\cftparaindent}{10mm} % small bump up for visual match
+    \setlength{\cftparanumwidth}{0mm} % no number anyway
+    \renewcommand{\cftparaleader}{\scriptsize\cftdotfill{\cftparadotsep}}
+    \renewcommand{\cftparadotsep}{0.5}
+
+       % Paragraph level customisation
+    \renewcommand{\cftsubparafont}{\scriptsize\itshape}
+    \renewcommand{\cftsubparapagefont}{\scriptsize\itshape}
+    \setlength{\cftbeforeparaskip}{0.2mm}
+    \setlength{\cftsubparaindent}{12mm} % small bump up for visual match
+    \setlength{\cftsubparanumwidth}{0mm} % no number anyway
+    \renewcommand{\cftsubparaleader}{\scriptsize\cftdotfill{\cftsubparadotsep}}
+    \renewcommand{\cftsubparadotsep}{0.5}
 }
 
 \def\setparttableofcontents{%
@@ -270,7 +281,7 @@
 
 % subsubsections processing
 \setcounter{secnumdepth}{3}	% numbering until subsubsections
-\setcounter{tocdepth}{4}	% toc depth
+\setcounter{tocdepth}{5}	% toc depth
 
 \setcounter{topnumber}{20}
 \renewcommand{\topfraction}{.99}
@@ -312,6 +323,15 @@
 
 % color for table captions
 % \captionsetup[table]{labelfont={color=myblue},font={color=myblue}}
+
+
+% color for figure captions
+\captionsetup[figure]{
+  labelfont={color=myblue},
+  font={color=myblue, small},
+  justification=justified,
+  format=plain
+}
 
 % 
 \usepackage{sectsty}

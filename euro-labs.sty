@@ -41,8 +41,8 @@
 \usepackage{colortbl}
 \usepackage{wallpaper}
 \usepackage[format=hang,
-            font={small,it,color=magenta},
-            labelfont={color=magenta},
+            font={small,it,color=myblue},
+            labelfont={color=myblue},
             singlelinecheck=false]{caption}
 \usepackage{sfmath}
 \usepackage{apacite}
@@ -50,6 +50,7 @@
 \usepackage[absolute]{textpos}
 \usepackage{array}	% tabs
 \usepackage{longtable}
+\usepackage{booktabs}	% \toprule, \midrule, \bottomrule
 % \usepackage{ltablex}
 \usepackage{xltabular}
 \usepackage{enumitem}
@@ -76,7 +77,7 @@
 \usepackage{printlen}
 \uselengthunit{cm} % Set the unit to cm (you can change this to mm, in, etc.)
 
-\graphicspath{ {graphics/} }
+\graphicspath{ {graphics/}{graphics-pr2/} }
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 
@@ -328,17 +329,27 @@
 }
 
 % color for table captions
-\captionsetup[table]{labelfont={color=magenta},font={color=magenta}}
+% \captionsetup[table]{labelfont={color=myblue},font={color=myblue}}
 
 
 % color for figure captions
 \captionsetup[figure]{
-  labelfont={color=magenta},
-  font={color=magenta, small},
+  labelfont={color=myblue},
+  font={color=myblue, small},
   % justification=justified,
   justification=centering,
   format=plain
 }
+
+% Text carried over unchanged from the previous periodic report (PR2) is
+% wrapped in \begin{prtwo}...\end{prtwo} and shown in magenta, captions included.
+% New or modified text is written outside it and appears in the normal colours.
+\newenvironment{prtwo}{%
+  \color{magenta}%
+  \captionsetup{labelfont={color=magenta},font+={color=magenta}}%
+  \captionsetup[figure]{labelfont={color=magenta},font+={color=magenta}}%
+  \captionsetup[table]{labelfont={color=magenta},font+={color=magenta}}%
+}{}
 
 % 
 \usepackage{sectsty}

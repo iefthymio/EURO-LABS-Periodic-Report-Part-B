@@ -5,10 +5,13 @@
 % \todo{Scientific output of WP.}
 
 
+\begin{prtwo}
 The scientific projects conducted by the WP3 TA users span a wide range of research frontiers, benefiting from the unique capabilities of the facilities. Some highlights are presented below.
+\end{prtwo}
 
-{\color{black}
+\begin{prtwo}
 \textbf{\textit{Laboratory Astrophysics}} \mbox{}
+\end{prtwo}
 
 During the final period of the project (P3), \textbf{HRMT-68} and \textbf{HRMT-76} experiments were conducted at the HiRadMat facility at CERN, building on the previous work in \textbf{HRMT-62} and \textbf{HRMT-64}. \textbf{HRMT-68} aimed at understanding long scale-length beam-plasma interactions and identifying plasma instabilities. The high-intensity proton beam enabled the generation of plasma conditions that cannot be reproduced elsewhere. The following experiment, \textbf{HRMT-76}, focused on validating the observation of particle acceleration by self-modulated beam instabilities. A limited amount of changes were needed to adapt the setup of \textbf{HRMT-68}, as shown in Fig.~\ref{fig:FBIV_FRMT76}.
 
@@ -18,18 +21,20 @@ The experiment concluded the data taking on week 24, 2026. The data analysis is 
     \centering
     \includegraphics[width=0.48\linewidth]{graphics/FBIV_HRMT76.png}
      \includegraphics[width=0.48\linewidth]{graphics/FBIV_HRMT76_(2).jpg}
-    \caption {\color{black}{FIREBALL IV (HRMT-76) experimental setup, where changes from FIREBALL III (HRMT-68) are marked in red. Courtesy: Prof. G. Gregori, Univ. of Oxford.}}
+    \caption{FIREBALL IV (HRMT-76) experimental setup, where changes from FIREBALL III (HRMT-68) are marked in red. Courtesy: Prof. G. Gregori, Univ. of Oxford.}
     \label{fig:FBIV_FRMT76}
 \end{figure}
 
+\begin{prtwo}
 \textbf{\textit{Material R\&D}} \mbox{}
+\end{prtwo}
 
 \textbf{HRMT-63} experiment, carried out in collaboration between CERN and J-PARC, aimed to measure the displacement cross section for 440 GeV/c protons to improve the assessment of radiation-induced damage in accelerator materials. The measurements provide valuable experimental data for validating DPA models and improving predictions for components exposed to high-intensity proton beams. Post-irradiation analyses have provided benchmark data to validate radiation-damage simulations and improve the accuracy of DPA calculations. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{graphics/DPA_HRMT63.png}
-    \caption{\color{black}{DPA (HRTM-63) experiment set-up at HiRadMat (Courtesy: S. Meigo, J-PARC/JAEA)}}
+    \caption{DPA (HRTM-63) experiment set-up at HiRadMat (Courtesy: S. Meigo, J-PARC/JAEA)}
     \label{fig:DPA_HRMT63}
 \end{figure}
 
@@ -40,7 +45,7 @@ The experiment concluded the data taking on week 24, 2026. The data analysis is 
     \includegraphics[width=0.48\linewidth]{graphics/RaDIATE_HRMT67.png}
     \includegraphics[width=0.48\linewidth]
     {graphics/RADIATE_HRMT67_(2).png}
-    \caption{\color{black}{Radiation Mapping Results for RaDIATE (HRTM-67) experiment (Courtesy: Q. Peterson, FNAL)}}
+    \caption{Radiation Mapping Results for RaDIATE (HRTM-67) experiment (Courtesy: Q. Peterson, FNAL)}
     \label{fig:radiate_HRMT67}
 \end{figure}
 
@@ -50,8 +55,8 @@ Identifying materials capable of withstanding extreme beam conditions while main
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.48\linewidth]{graphics/HRMT-74.png}
-    \caption{\color{black}{Experimental Observables of the HRMT-74 experiment" Left: Different screen materials produce different beam profile. The light yield produced will be analysed and characterised for each material. Right: The beam-induced damage on the samples will be analysed via SEM to define the threshold of failure}}
-    \label{fig:hiradmat_Si3N4}
+    \caption{Experimental Observables of the HRMT-74 experiment" Left: Different screen materials produce different beam profile. The light yield produced will be analysed and characterised for each material. Right: The beam-induced damage on the samples will be analysed via SEM to define the threshold of failure}
+    \label{fig:HRMT74}
 \end{figure}
 
 In the framework of this project, a master student was supported by EURO-LABS to prepare and implement the beam-based alignment (BBA) procedure required for the HRMT-74 experiment at the HiRadMat facility. The work focused on rebuilding the BBA acquisition-and-analysis tool used to determine the beam position relative to the target with sub-millimetre precision. The BBA procedure consists of sweeping the target or intercepting block across the beam and fitting the resulting beam-loss edges to determine the beam centre in the target reference frame.
@@ -60,12 +65,14 @@ The work included the development of a stable and maintainable architecture for 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{graphics/BBA.png}
-    \caption{\color{black}{The BBA procedure is described in detail in a dedicated document and the script of the application is available in the facility's GitLab}}
-    \label{fig:hiradmat_Si3N4}
+    \caption{The BBA procedure is described in detail in a dedicated document and the script of the application is available in the facility's GitLab}
+    \label{fig:BBA_HRMT74}
 \end{figure}
 
 
+\begin{prtwo}
 \textbf{\textit{Instrumentation R\&D}} \mbox{}
+\end{prtwo}
 
 \textbf{HRMT-71} followed-up experiment \textbf{HRMT-55} and was conducted in collaboration with CERN and ESS. The experiment focused on assessing the performance of several Beam Loss Monitor (BLM) technologies under representative high-intensity SPS beam conditions. The campaign focused specifically on ionisation chambers (ICs) and lower-sensitivity ionisation chambers (LICs), which play an important role in ensuring system integrity. Their response, linearity, dynamic range, and robustness were evaluated under controlled beam-loss conditions to improve beam-loss detection for machine protection and diagnostics.
 The results of the experiment will provide benchmark data for comparing and calibrating the different BLM technologies. The measurements will support improved signal interpretation and detector deployment strategies, contributing to the optimisation of BLM systems for 
@@ -75,27 +82,37 @@ HiRadMat, the CERN accelerator complex, and future high-brightness accelerator f
     \centering
     \includegraphics[width=0.7\linewidth]{graphics/HRMT71_LIC.png}
     \includegraphics[width=0.7\linewidth]{graphics/HRMT71_LIC2.png}
-    \caption{\color{black}{Top: Calculation of the ration of the average integrated signal between LIC detectors. Bottom: Waveform and cumulative integral for LIC Detectors of the BLM system used in HRMT-71, showing better stability across intensities. (Courtesy: C. Zamantzas, CERN)}}
+    \caption{Top: Calculation of the ration of the average integrated signal between LIC detectors. Bottom: Waveform and cumulative integral for LIC Detectors of the BLM system used in HRMT-71, showing better stability across intensities. (Courtesy: C. Zamantzas, CERN)}
     \label{fig:HRMT_71}
 \end{figure}
-}
 
+\begin{prtwo}
 \textbf{R\&D for future accelerators - I} \mbox{}
+\end{prtwo}
 
+\begin{prtwo}
 The MACHAFILM platform at CEA-IRFU/Synergium provides state-of-the-art niobium (Nb) surface treatments (electrochemical polishing and thermal annealing in vacuum) on SRF cavities and Quadrupole Resonators (QPR) to achieve the best possible baseline prior to thin film deposition. During the reference period, tests were conducted on samples provided by several laboratories, including HZB, FNAL, CERN, JLAB, STFC, and INFN. In particular, HZB supplied two Nb QPRs initially to IJClab/SUPRATECH, where they underwent mechanical polishing before being transferred to Synergium for electropolishing, vacuum thermal treatment, and a second electropolishing step. The treated samples were then returned to HZB, where RF tests demonstrated outstanding baseline performance, establishing reliable references for future high-Tc thin film depositions. Additionally, the MACHAFILM platform was solicited by STFC to perform electrochemical and thermal treatments, as well as cleanroom assembly, on three bulk Nb cavities to achieve optimal RF baseline performances for future high-Tc thin film deposition.
+\end{prtwo}
 
+\begin{prtwo}
 The development of next-generation SRF cavities relies on new superconducting thin films and multilayers capable of operating at higher temperatures (up to \SI{4.2}{K}) while maintaining the performance levels currently achieved with bulk Nb at \SI{2}{K}. Within the European particle accelerator roadmap and the IFAST and ISAS projects, high-Tc superconducting films are planned for deposition on Cu or Nb cavities and QPRs, with RF performance assessments at cryogenic temperatures. In this regard, the growth of high-quality high-Tc superconducting alloys such as NbTiN and Nb3Sn is crucial, as they possess critical temperatures roughly twice that of Nb. Achieving higher operating temperatures would significantly reduce cryogenic costs, aligning with key goals of the European high-energy physics strategy.
+\end{prtwo}
 
+\begin{prtwo}
 Beyond surface treatments, the MACHAFILM platform has also been active in characterizing superconducting films. Several laboratories including FNAL, CERN, JLAB, STFC, and INFN provided NbTiN and Nb3Sn films deposited on Nb, Cu, and sapphire substrates. These samples were analyzed using tunneling spectroscopy (TS) and X-ray diffraction (XRD) at MACHAFILM. TS, in particular, has proven highly predictive for RF performance by assessing film quality at the nanoscale. More than eight samples were evaluated, and detailed reports summarizing the results were sent to the respective institutions.
+\end{prtwo}
 
+\begin{prtwo}
 \textbf{\textit{R\&D for future accelerators - II}} \mbox{}
+\end{prtwo}
 
+\begin{prtwo}
 Particle accelerators and colliders must cope with a large amount of synchrotron radiation (SR) power being deposited on the vacuum chamber walls.
 Photo-stimulated desorption (PSD) leads to increasing pressure and high heat load and is therefore to be investigated using new types of a number of beam screen and vacuum chamber prototypes. The results of this study will be critical for the design of future high-energy hadron colliders such as FCC-hh, in addition this research has potential implications also for the near future of the LHC. 
 \begin{figure}[H]
   \centering
   \begin{minipage}[c]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{graphics/wp3-KIT_FCCphotons.png}
+    \includegraphics[width=\textwidth]{graphics-pr2/wp3-KIT_FCCphotons.png}
   \end{minipage}%
   \hfill
   \begin{minipage}[c]{0.5\textwidth}
@@ -106,58 +123,76 @@ Photo-stimulated desorption (PSD) leads to increasing pressure and high heat loa
     \vspace*{\fill}
   \end{minipage}
 \end{figure}
+\end{prtwo}
 
+\begin{prtwo}
 During the EU-project EuroCirCol CERN and KIT realized the BESTEX beamline of CERN at the KIT light source. The storage ring of the KIT light Source is the synchrotron KARA delivering similar spectra as expected at the FCC.
+\end{prtwo}
 
+\begin{prtwo}
 CERN installed a residual gas analyser in the central part of the BESTEX test chamber  before the start of the FCC beam screen prototype experiment (no.5, with saw-tooth profile to decrease synchrotron radiation photon scattering) in period P1 (EURO-LABS-KIT-KARA-2023-01). In period P2 this prototype was exchanged by the new beam-screen prototype no. 6 with amorphous carbon coating (aC). aC is a stable and inert material, deposited via sputtering techniques onto the internal wall of a circular tube (carried out at CERN).  The main feature of aC is its extremely low secondary electron yield, which is necessary to avoid electron cloud instability in accelerators with positively charged beams. In the long-term experiment at KARA (EURO-LABS-KIT-KARA-2023-03), the beam-screen prototype no. 6 was irradiated at a flat angle of incidence and cooled with LN2. The increase in pressure was measured. In addition, the composition of the species outgassing from the beam screen was determined at CERN's BESTEX beamline at KARA. The experiment began installation in August 2023 and the prototype was irradiated with over 480 KARA synchrotron light until the first quarter of 2024. The prototype is still installed in BESTEX and is waiting to be exchanged for the next one, which is currently being prepared
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.75\linewidth]{graphics/wp3-KIT_BESTEX.png}
+    \includegraphics[width=0.75\linewidth]{graphics-pr2/wp3-KIT_BESTEX.png}
     \caption{CERN installed the BESTEX beamline at KARA since 2019 (EU project EuroCirCol). BESTEX was used for up to now two actual TA experiments within EURO-LABS. A goal is the exploration of the vacuum performance of the FCC-hh beam screen to protect the cold superconducting magnets from the 
 direct irradiation high-power SR photon beams.
 }    
     \label{fig:kit_bestex}
 \end{figure}
+\end{prtwo}
 
+\begin{prtwo}
 The KARA experiment (EURO-LABS-KIT-KARA-2023-04) of the University Lille aimed to observe, understand and control the ultrafast self-organisation of relativistic electron bunches in accelerator facilities. A central goal is to master the emission of giant terahertz (THz) pulses in coherent synchrotron radiation (CSR), which is a proposal for new THz sources. Another important goal was the improvement of novel ultrafast observation instruments. KARA is one of the only electron storage rings in the world where the shape of relativistic electron bunches can be directly ‘studied’ in a storage ring facility. The techniques of chaos control (feedback control of periodic orbits) for achieving stable THz-CSR emissions, which the team at the University of Lille had already successfully tested at the SOLEIL synchrotron, were transferred to the KIT light source KARA, and the results have thus been compared between the machines and with theory. At KARA, the opportunity was taken to observe the development of the longitudinal bunch profile in real time with the help of the existing electro-optical near-field setup. In this experiment, an advanced control loop from chaos control theory was implemented on a fast FPGA board to control the amplitude of one of the two main radiofrequency (RF) cavities in the electron storage ring KARA at KIT. The CSR emission of THz power at high level was stabilised to control the micro-bunching instability. The fast Schottky diodes in the KIT-IR2 beamline at KARA were used and the THz power was measured in real time with the high-speed data acquisition card KAPTURE developed by KIT.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{graphics/wp3-KIT_CSRsignal.png}
+    \includegraphics[width=0.75\linewidth]{graphics-pr2/wp3-KIT_CSRsignal.png}
     \caption{The CSR signal was measured with a fast Schottky diode (at a KIT infrared beam line). After \SI{100}{ms} the team of the University Lille (F) switched on the FPGA-based feedback loop. For better visibility, the raw signal (black, left \& green, right) was filtered (blue, left \& orange, right) to remove the fast sinusoidal fluctuation. Suppression of the sawtooth outburst fluctuation variance by a factor of 28 in the CSR emission at the KARA electron storage ring, after switching on the FPGA-based feedback loop developed by the PhLAM team of University Lille. The fast CSR fluctuations are still present after the feedback is switched on, leading to a stabilization of the THz emission. Publication in preparation.}    
     \label{fig:kit_csr}
 \end{figure}
+\end{prtwo}
 
+\begin{prtwo}
 FCC-ee precision physics measurements require an accurate and precise determination of the centre-of-mass collision energy, which can be obtained from the beam energies. Since the depolarisation frequency is directly proportional to the beam energy, a promising way to determine this energy is to depolarise transversely polarised packets. This resonant depolarisation (RDP) has long been used in KARA whereby the resonance frequency is measured via the change in the Touschek lifetime. At KARA, a first RDP measurement campaign (EURO-LABS-KIT-KARA-2023-05) with numerous scan settings and bundle configurations was carried out to investigate how this technique could be applied at FCC-ee, in particular the sensitivity to parameters such as the scan speed of the depolariser and the scan velocity. The measurement campaign was successful and the users at CERN expressed interest in carrying out another measurement campaign at a later target point.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{graphics/wp3-KIT_RDPscans.png}
+    \includegraphics[width=0.75\linewidth]{graphics-pr2/wp3-KIT_RDPscans.png}
     \caption{More than 40 successful RDP scans were realized at KARA by scanning direction up and down for scanning times of \SI{100}{s} to \SI{600}{s}, respectively}    
     \label{fig:kit_rdp}
 \end{figure}
+\end{prtwo}
 
+\begin{prtwo}
 RDP results published in:
 \begin{itemize}
 \item FCCIS WP2-workshop, 2023-11-15, B. Härer et al.: Polarisation studies at KARA
 \item and in the following IPAC papers: \\ https://doi.org/10.18429/JACoW-IPAC2024-TUPG33, \\ https://doi.org/10.18429/JACoW-IPAC2024-WEPG51, and \\ https://doi.org/10.18429/JACoW-IPAC2024-WEPR20
 \end{itemize}
+\end{prtwo}
 
+\begin{prtwo}
 Bunch-by-bunch (BBB) feedback systems are essential for the realisation of ultra-low emittance rings that allow electron beams to reach high-quality states for use in synchrotron radiation light sources and colliders. Following the workshop WP7.2 of the EU project I.FAST on BBB feedback systems, which was attended by more than 40 experts on BBB systems from all over the world, the following three experiments were carried out at the request of the experts in connection with the BBB systems carried out at the KARA storage ring and at the booster synchrotron with real electron beams by operating the BBB systems installed in each of the two accelerators(EURO-LABS-KIT-KARA-2024-06). The aim of the first experiment at KARA was to manipulate the vertical beam size by exciting the betatron oscillation with the BBB system to improve the Touschek beam lifetime. The goal of this experiment was to look for common procedures for commissioning bunch-by-bunch feedback systems. The goal of the third experiment was to longitudinal kicks with the bunch-by-bunch feedback system and the stripline kicker installed in the booster synchrotron. This experiment will lead to the next step, such as longitudinal manipulation of beams to improve booster beam quality. Data and results of the three experimental topics have been shared with all interested participants, and the data analysis and subsequent discussions are ongoing. 
+\end{prtwo}
 
 
+\begin{prtwo}
 According to the design of the FCC, the desired mechanical alignment tolerances of the magnets are in the range of \SI{100}{\micro\meter} to \SI{150}{\micro\meter}. However, to achieve the ambitious research goals at the FCC, a low (10-20 µm) relative alignment of the quadrupoles and sextupoles is required. For this purpose, correction magnets are provided to steer the beam in the direction of the magnetic centre, which is known as beam-based alignment (BBA). The BBA must be performed for approx. 1870 quadrupoles and approx. 630 sextupoles, so in addition to the accuracy, the average time required to determine the individual magnetic offset is a key parameter for the selection of the BBA method. The development of a concept for the BBA at FCC-ee is currently based on simulations but is to be supported by proof-of-principle tests on existing machines, for which experiments were carried out at KARA (EURO-LABS-KIT-2024-KARA-07).  Strategies were successfully investigated that will significantly reduce the time required for the BBA at FCC.
+\end{prtwo}
 
 
+\begin{prtwo}
 \textbf{\textit{Novel detector R\&D}} \mbox{}
+\end{prtwo}
 
+\begin{prtwo}
 \begin{description}
 \item[MM\_TCP]: The experiment goal was to test and validate TPC performances of two MicroMegas detectors based on a strip read out system. The resistive Micromegas chambers are frontier Micro-Pattern Gas Detectors with a planar geometry and with an amplification gap of the order of \SI{18}{\micro\meter} between the read-out (RO) PCBs and the mesh. Similar detectors have been widely used and recently installed in the muon spectrometer of one of the LHC experiment, covering a dimension of \SI{2400}{\meter\tothe{2}}.
 The purpose of the test beam is to study and tune the DAQ based on APV technology in order to adapt to the acquisition window required for TPC purposes.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.48\linewidth]{graphics/BTF-MMTPC2.jpeg}
-    \includegraphics[width=0.48\linewidth]{graphics/BFT-MMTPC3.jpeg}
+    \includegraphics[width=0.48\linewidth]{graphics-pr2/BTF-MMTPC2.jpeg}
+    \includegraphics[width=0.48\linewidth]{graphics-pr2/BFT-MMTPC3.jpeg}
     \caption{Photo of the experimental setup in the BTF line.}    
-    \label{fig:kit_rdp}
+    \label{fig:btf_setup}
 \end{figure}
 Two different types of Micromegas, one of which never previously tested, have been experimentally characterized. The planned test and some other extra test have been fully acquired, with calibration and load curve in different beam configuration especially for flux and multiplicity.
 The experiment resulted to be well-planned, executed smoothly, and achieved its goals. The combination of on-site and remote support, along with continuous monitoring of the system parameters, contributed to the overall success of the operation.
@@ -181,6 +216,7 @@ The following experimental goals were reached:
 \end{itemize}
 Experiment Duration: 1 week or 168 h (2024, 9-16 December)
 \end{description}
+\end{prtwo}
 
 
 %\textbf{Medical Physics R\&D}
@@ -192,9 +228,12 @@ Experiment Duration: 1 week or 168 h (2024, 9-16 December)
 %    \item[SE1] Electron collimation at CLEAR (SE1) > Done, to be reimb. (N. Delerue, D. Dauvergne, 64 units)
 %\end{description}
 
+\begin{prtwo}
 \textbf{Applications}
+\end{prtwo}
 
 
+\begin{prtwo}
 \begin{itemize}
 \item One-electron oxidation of S-adenosyl methionine,
 \item Crosslinking of self-assembled fatty acids on copper by electron beam irradiation,
@@ -204,3 +243,4 @@ Experiment Duration: 1 week or 168 h (2024, 9-16 December)
 \item Bioactivity of irradiated foods by low energy e-beam,
 \item Face masks recycling with the use of radiation technologies.
 \end{itemize}
+\end{prtwo}

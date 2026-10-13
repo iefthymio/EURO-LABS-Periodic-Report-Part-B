@@ -96,19 +96,21 @@ Beyond transnational access, steady progress has been achieved in the service im
 
 \subsubsection*{Progress per Task}
 
+{\color{black}
 \subparagraph{Task 3.1 Material Testing Facilities} \mbox{}
 
-This task includes only the HiRadMat Facility at CERN. 
+This task force includes only the HiRadMat Facility at CERN. 
 
 \subparagraph{HiRadMat at CERN}
 
-HiRadmat has had great progress in the last reference period concerning EURO-LABS. The facility remains in extremely high demand from the international community, involving both EU and overseas teams that are performing experiments. A total of 3928 AUs have been spend (from the total requested 4800). The percentage of AUs spent vs the available AUs and the evolution since the start of the project is shown in Figure~\ref{fig:wp3-hrmt-stat}. With the updated schedule of CERN, the facility will remain operational in 2026, the last year of EURO-LABS, and could welcome additional TA requests, also in view of the long shutdown 2026-2029. 
+The HiRadMat facility of CERN / SPS has been in high demand within the international research community for the full duration of the project. After the 4800 AUs initially allocated were fully committed by M32 of the project, an additional 4336 AUs were granted, nearly doubling the access provision. A total of 9360 AUs have been delivered, providing transnational access to 11 experimental campaigns, counting 48 sub-projects, over the 4-year period. The allocation of AUs throughout the project can be seen in Figure~\ref{fig:wp3-hrmt-stat}, while Figure~\ref{fig:gender_distr_hiradmat} shows the gender and age distribution of the funded users in HiRadMat.
+
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.48\linewidth]{graphics/stat_pie_hiradmat.png}
-    \includegraphics[width=0.48\linewidth]{graphics/overall_evolution_hiradmat.png}
+    \includegraphics[width=0.48\linewidth]{graphics/AUs_allocation_hrmt.png}
+    \includegraphics[width=0.48\linewidth]{graphics/deliveredAUs_distribution_hrmt.png}
     % \captionsetup{justification=centering}
-    \caption{Access Units spent (left) and evolution in time (right) in HiRadMat to the end of P2.}
+    \caption{\color{black}{Access Units spent (left) and evolution in time (right) in HiRadMat to the end of P2.}}
     \label{fig:wp3-hrmt-stat}
 \end{figure}
 
@@ -120,16 +122,16 @@ HiRadmat has had great progress in the last reference period concerning EURO-LAB
 %    \label{fig:stat_pie_hiradmat}
 %\end{figure}
 
-Figure~\ref{fig:gender_distr_hiradmat} shows the gender and age distribution of the funded users in HiRadMat. 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.48\linewidth]{graphics/gender_distr_hiradmat.png}
-    \includegraphics[width=0.48\linewidth]{graphics/age_distr_hiradmat.png}
+    \includegraphics[width=0.50\linewidth]{graphics/gender_distribution_hiradmat_3.1.png}
+    \includegraphics[width=0.48\linewidth]{graphics/age_distribution_hiradmat_3.1.png}
     % \captionsetup{justification=centering}
-    \caption{Gender(left) and age (right) distribution of TA funded users in HiRadMat.}
+    \caption{\color{black}{Gender (left) and age (right) distribution of TA funded users in HiRadMat.}}
     \label{fig:gender_distr_hiradmat}
 \end{figure}
-The age distribution reflects the effort made within the USP to promote graduates and young researchers in the early stages of their careers. At the same time, the presence of senior researchers in the preparatory, data-taking and experimental phases is absolutely necessary for the success of the experiments and the transfer of knowledge. 
+
+The age distribution reflects the effort made within the USP to promote and support graduates and young researchers in the early stages of their careers. At the same time, the presence of senior researchers in the preparatory, data-taking and experimental phases was absolutely necessary for the success of the experiments, ensuring guidance and transferring expertise. 
 
 %For the funded users, the gender distribution is shown also in Figure~\ref{fig:gender_distr_hiradmat}, removing the duplicates by name. 
 % is indicating that as per the instructions for TA, the user selection panel has approved mostly undergraduate and postgraduate students, at the early stages of their careers and fewer senior researchers (professors and tenured researchers). However, specifically at HiRadMat, the presence of the 
@@ -149,28 +151,28 @@ The age distribution reflects the effort made within the USP to promote graduate
 
 \subsubsection*{Main Results and Achievements}
 
-HiRadMat continued to provide transnational access (TA) to several projects, supporting not only accelerator R\&D but also paving the way for novel uses of accelerator facilities in astroparticle research. 
+HiRadMat continued to provide transnational access (TA) to several users to conduct experiments spanning advanced accelerator materials, thermomechanical shock studies, radiation damage benchmarking, detector validation, and frontier plasma astrophysics. 
 
-The facility remains highly popular among users, thanks in part to targeted publicity efforts made through conferences and workshops, which have increased its visibility within the scientific community. Furthermore, the high motivation and expertise of the beam team combined with the strong local technical support, has played a critical role in helping users successfully complete their experiments and produce high-quality scientific results.
+The obtained results were achieved thanks to the uniqueness of the facility, combining SPS beam energy, pulse intensity, and dedicated experimental infrastructure available at HiRadMat. This led to a consistent high demand of the facility throughout the project, along with sustained engagement from the international user community.
 
 %Highlights of the experimental results from the funded projects are presented in Section~\ref{sec:wp3_scientific_output}.
 
 \paragraph{Service improvements:}
 
-EURO-LABS is supporting a service improvement project for HiRadMat, focused on enhancing the calibration of the SPS Beam Position Monitor (BPM) system (designated "ALPS") in both the ring and the extraction line toward the facility. Accurate beam position measurements are particularly crucial for many experiments that require precision and repeatability beyond what is presently achievable.
+EURO-LABS supported service improvement studies for HiRadMat, focused on enhancing the calibration of the SPS Beam Position Monitor (BPM) system (designated "ALPS") in both the ring and the extraction line toward the facility. The studies led to the development of a systematic approach to optimise neural network models for accurately determining transverse beam position from BPM electrode signals. Additionally, they quantified training uncertainties and assessed the robustness of different network configurations.
 
-As part of this effort, a neural network is being developed to improve the residual errors in the BPM device calibration, which is currently based on a simple polynomial fit. The task is complex and requires careful evaluation of the results, particularly because the performance of the existing calibration method had not previously been studied in such depth. Progress is well underway, led by a doctoral student at CERN in collaboration with the University of Oxford.
+A key element to highlight was the evaluation of the robustness and reproducibility of the training procedure. Repeated training enabled a systematic assessment of training variability and comparison of different network architectures, leading to the identification of a preferred feedforward network configuration. Further optimisation of some training parameters will be performed, in order to complete the evaluation of feedforward networks for SPS BPM calibration.
 
-Preliminary results comparing the residuals produced by the neural network against those from the traditional polynomial fit — using the response from a single electrode of an ALPS Beam Position Monitor (BPM) — are shown in Figure~\ref{fig:wp3-hrm-si}. The newly developed neural network approach shows improved performance compared to the existing polynomial fit. Further optimization studies are ongoing, with the aim of minimizing beam position measurement errors.
+The results represent an important milestone from demonstrating the feasibility of machine learning approach towards a robust and reproducible calibration method suitable for practical implementation in the BPM system of the SPS. In particular, the main contribution provides an improvement of stability and reproducibility of beam delivery across the SPS complex and its wider experimental programme.
+}
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.75\linewidth]{graphics/hiradmat_SI.png}
-    \caption{Residuals for the calibration curve of an ALPS Beam Position Monitor, based on the response of a single electrode.  (Courtesy of V. Stergiou and A. Boccardi, CERN).}
+    \includegraphics[width=0.48\linewidth]{graphics/ServiceImprovements.png}
+    \includegraphics[width=0.48\linewidth]{graphics/ServiceImprovements (2).png}
+    \caption{\color{black}{Left: Mean maximum error values over multiple runs using ReLU as activation function throughout the network. Right: Mean maximum error values over multiple runs using tanh as activation function throughout the network. The performance of the networks was worse when using tanh.  (Courtesy: V. Stergiou and A. Boccardi, CERN).}}
     \label{fig:wp3-hrm-si}
 \end{figure}
-
-The objective is to define and validate the algorithm for use within EURO-LABS. The implementation is planned to start in 2029, after the CERN long shutdown (2026-2029). This timeline provides sufficient time for the prototyping and testing of new electronic components, with the new system becoming operational after the restart.
 
 \subparagraph{Task 3.2 : Technology Infrastructures} \mbox{}
 
@@ -243,7 +245,7 @@ Starting from July 2024, access to the THOR facility has been restricted due to 
 By March 2025, the commissioning of a fully equipped test facility will start, providing testing opportunities for TA users in the field of cryogenic, vacuum, electronics. However the continous engagement of the Facility management to support the GSI/FAIR project as high-priority poses potential constraints on planning TA access. All efforts will be made to accommodate possible external access slots, should the interest arises. 
 
 \subparagraph{IJCLab/SUPRATECH}
-The facility is actively participating to the significant European In-kind contribution  to the PIP-II project of FermiLab (USA) achieving through RAs to perform the tests and full validation of SC cavities designed within the project and fabricated in Italy. The SUPRATECH maintains as well strong links with the CEA/IRFU Sygergium facilities, offering combined surface processing of accelerator components for R\&D activities. 
+The facility is actively participating to the significant European In-kind contribution  to the PIP-II project of FermiLab (USA) achieving through RAs to perform the tests and full validation of SC cavities designed within the project and fabricated in Italy. The SUPRATECH maintains as well strong links with the CEA/IRFU Synergium facilities, offering combined surface processing of accelerator components for R\&D activities. 
 During the reference period SUPRATECH offered remote access to three projects, delivering 296 AU, corresponding to 46\% of the total AU promised in the GA. 
 
 

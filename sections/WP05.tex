@@ -160,53 +160,32 @@ The social media activities of EURO-LABS on LinkedIn and Instagram are contribut
 
 
 \subparagraph{Task 5.2: Open Science } \mbox{}
-%\todo{Work In Progress}
 
 Within WP5, the goal of the Task 5.2 is to provide new services to the users in order to achieve an improved and facilitated access to experimental datasets produced in Research Infrastructures. 
-Actions have been put in place to ensure that data generated at the various RIs are treated in line with the FAIR principles, following a proper Data Management Plan. 
-The new services aim at improved FAIR data practices. This includes (1) a new data catalog (openNP), (2) an 
-%authentification 
-authentication and authorization (AAI) service and (3) a prototype of platform for data access.
+Actions have been put in place to ensure that data generated at the various RIs are treated in line with the FAIR principles, following a proper Data Management Plan aligned with international best practices, including those recommended by the \textbf{European Open Science Cloud (EOSC)} and the \textbf{FAIRsFAIR} project, This aim to ensure that the data not only met technical standards but also support the broader goals of open science. The new services aim at improved FAIR data practices. This includes (1) a new data catalog (openNP), (2) an authentication and authorization (AAI) service and (3) a prototype of platform for data access.
 
 During the reporting period, for the sub-tasks, the main results are :
 \begin{itemize}
-    \item  release of the specification document of the openNP catalog under MS35.
-    \item the AAI service based on INDIGO-IAM was published online (https://iam-eurolabs.ijclab.in2p3.fr/) and is now being used by the Virtual Access platform Theo4Exp (Task 2.4,{and page 95 of this document}) to authenticate their users. To date, more than 250 users are registered and the tool is actually used for the authentication of various services (Theo4Exp (Task of EURO-LABS), Grafana monoriting services at GSI and GANIL). Promotion of the service to future users was achieved.
-    \item Different data lake prototypes are being developed/tested, also in coordination with the EU ESCAPE Project and the PUNCH4NFDI (consortium of particle, astro-, astroparticle, hadron and nuclear physics, representing about 9.000 scientists with a Ph.D. in Germany) project. The results from these activities, combined with the other related efforts like AAI, will lead to a federated infrastructure concept that will be implemented in FAIR and other infrastructures.
-    \item An advanced training school on data management was organized under EURO-LABS WP5.4 in collaboration with the German HGS-HIRe doctoral school in Nov 2024, see in Fig.~\ref{fig:Open_Science_school}    
-   two photos taken during the school corresponding to some of the activities realised during this very successful school.  A Zenodo repository was created, lectures and hands-on material can be found at the webpage: https://gitlab.in2p3.fr/eurolabs-os-school/teaching/project-zero for the other material, links are on the slides. The material produced by the school attendees was also published on the Zenodo repository of the project.
+  
+  \item The successful launch of the \textbf{openNP catalogue} (\url{https://opennp.in2p3.fr}), which provided researchers with a user-friendly, metadata-rich repository for experimental datasets in nuclear physics. The catalogue was not only a discovery tool but also a gateway to high-quality, FAIR-compliant data, enabling researchers to identify, access, and reuse datasets with ease. The design, architecture, and operational framework of openNP were thoroughly documented in \textbf{Deliverable D5.3} (\url{https://doi.org/10.5281/zenodo.17020290}) and \textbf{Deliverable D5.6} (\url{https://doi.org/10.5281/zenodo.22687267}). These deliverables outlined the interoperability standards, metadata schemas, and FAIR assessment metrics adopted by the catalogue, ensuring its compatibility with existing and future RIs. To guarantee the long-term sustainability and relevance of openNP, a governing board was established, comprising five representatives from leading European institutions: GANIL (France), GSI (Germany), CNA (Spain), INFN (Italy), and LPCCaen (France). This board oversaw strategic decision-making, including policy development, community engagement, and the prioritization of future enhancements, ensuring that openNP continued to evolve in response to user needs and emerging standards in open science and data management.
+  \item The deployment of the \textbf{AAI service} (\url{https://iam-eurolabs.ijclab.in2p3.fr/}), which simplified and standardized user authentication across multiple platforms. This service significantly reduced the administrative overhead for both users and service providers by implementing a single sign-on (SSO) solution that eliminated the need for multiple credentials. By the end of the project, the AAI service had been integrated into several key platforms, including Theo4Exp (Task 2.4 of EURO-LABS), a Virtual Access platform for theoretical nuclear physics that began using the service to authenticate its users. The AAI was also adopted by openNP to enable secure and role-based access to its datasets, as well as by Grafana monitoring services at GSI and GANIL, where operational teams gained access to dashboards and tools with granular permissions. The service amassed over 250 registered users by the project's conclusion, and promotional activities, such as workshops and direct engagement with RI communities, were undertaken to raise awareness and encourage broader adoption. The AAI service not only improved the user experience by reducing friction for researchers but also enhanced security by centralizing authentication and authorization processes.
+  \item Different data lake prototypes are being developed/tested, also in coordination with the EU ESCAPE Project and the PUNCH4NFDI (consortium of particle, astro-, astroparticle, hadron and nuclear physics, representing about 9.000 scientists with a Ph.D. in Germany) project. The results from these activities, combined with the other related efforts like AAI, will lead to a federated infrastructure concept that will be implemented in FAIR and other infrastructures.
+  \item Two advanced training schools were organized, focusing on open science principles, collaborative software development, and data management best practices. These schools targeted early-career researchers, data stewards, and IT professionals, providing hands-on training in FAIR data curation, metadata standards, and tooling for reproducible research, including version control, containerization, and workflow management. The training also covered the practical use of openNP and AAI, ensuring that participants could apply these services in their own work. The schools reached a wide audience and fostered a culture of open science and collaborative data management within the community. Feedback from participants indicated a high level of satisfaction, with many reporting that they had gained practical skills that they could immediately apply in their research.
 \end{itemize}
-
-\begin{figure}[!h]
-    \centering
-\begin{minipage}{0.48\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{graphics/Open science ethics.png}
-    \end{minipage}
-    \hfill % Agrega espacio horizontal
-    \begin{minipage}{0.51\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{graphics/presentation-Open Science.png}
-    \end{minipage}   
- \caption{Two photographs taken during the Advanced School on Open science and Data management. On the right they do an exercise of collecting ideas on Open Science Ethics and on the right a team of students present to the group the outcomes of the hands-on data challenges}
-    \label{fig:Open_Science_school}
-\end{figure}
+     
 
 
-In addition, under Task 5.2, the Data Management Plan of EURO-LABS was reviewed and updated (D5.8).
+Finally, all digital objects produced by the project, including reports, deliverables, training materials, and communications, were archived in the \textbf{EURO-LABS Zenodo community} (\url{https://zenodo.org/communities/euro-labs}). This ensured long-term accessibility, citability, and reuse in accordance with open science principles. The sustainability of the services developed under Task 5.2 remained a major priority throughout the project. The governing board for openNP, the growing user base of the AAI service, and the ongoing collaboration with EU ESCAPE and PUNCH4NFDI all contributed to the long-term viability of these initiatives. The federated infrastructure concept, in particular, gained traction as it was piloted in FAIR and other RIs, paving the way for a more connected and interoperable data landscape in European physics research. The successes of Task 5.2 demonstrated the value of a coordinated, user-centric approach to data management and access, and the lessons learned will continue to inform future efforts in this area.
 
-
-Digital objects (reports, deliverables, communications, ...) produced by the project can be found on the Zenodo repository of the project (\url{https://zenodo.org/communities/euro-labs}). 
 
 \subparagraph{Task 5.3: Machine Learning} \mbox{} 
 %(Month xx-yy)} 
 
 %\todo{Work in Progress}
 
-Within WP5, the Task 5.3 aims to develop Machine Learning (ML) methods to improve beam characteristics, transport efficiency, and reproducibility of accelerator tuning, which will reduce the beam preparation time and thus increase the available time for the experiments. Accelerator laboratories worldwide are exploring a large variety of techniques to achieve this aim, from classical optimization and Bayesian optimization (BO) to reinforcement learning. One part of this automation effort is to provide a framework that allows machine experts, operators, and users to solve certain, focused optimization problems and to make these solutions reusable in an operational context. We call this project the “Generic Optimization Framework and Frontend”, or GeOFF for short.  EURO-LABS finances one scientific staff
-member at GSI for three years for deployment and implication of GeOFF for improved beam delivery at EURO-LABS facilities.
+Within WP5, the Task 5.3 aims to develop Machine Learning (ML) methods to improve beam characteristics, transport efficiency, and reproducibility of accelerator tuning, which will reduce the beam preparation time and thus increase the available time for the experiments. Accelerator laboratories worldwide are exploring a large variety of techniques to achieve this aim, from classical optimization and Bayesian optimization (BO) to reinforcement learning. One part of this automation effort is to provide a framework that allows machine experts, operators, and users to solve certain, focused optimization problems and to make these solutions reusable in an operational context. We call this project the “Generic Optimization Framework and Frontend”, or GeOFF for short.  EURO-LABS finances one scientific staff member at GSI for three years for deployment and implication of GeOFF for improved beam delivery at EURO-LABS facilities.
 
-The main result of Task 5.3 in RP2 is the regular use of GeOFF at two facilities, CERN (Switzerland) and GSI (Germany). Its successful application to improve accelerator tuning at GSI has been demonstrated in several dedicated beam experiments. The beam loss of the injection into the SIS18 synchrotron has been reduced from 40$\%$ to 15$\%$ in about 15 minutes, where manual tuning can take up to 2 hours. GeOFF has also been successfully applied to the GSI Fragment Separator (FRS) for beam steering and focusing, see Figure~\ref{fig:wp5_frs}. In particular, the great flexibility of GeOFF, allowing the integration of new and legacy control systems, has significantly facilitated and accelerated the application of ML methods at GSI and earlier at CERN (P1). 
+The main result of Task 5.3 in RP3 is the continued rollout of new optimization approaches. The successful application of Geoff, incorporating these new methods to improve accelerator tuning at GSI, has been confirmed in several dedicated beam experiments and published in Appel et al., EPJ Research Infrastructures (2026) https://doi.org/10.1007/s41781-026-00175-6. This work includes a newly developed, much faster optimization approach (under 5 minutes) for the target area, where only limited phase-space information is available (see Figure~\ref{fig:wp5_frs}). GeOFF has also been successfully applied in dedicated ion-source setups for the PUMA experiment at TU Darmstadt and for PUMA at CERN in end of 2025 and May 2026, showing that real-time tuning of ion sources and particle traps is achievable. In particular, GeOFF’s high flexibility—enabling integration of both new and legacy control systems—has markedly eased and sped up the adoption of ML methods at GSI and previously at CERN.
 
 \begin{figure}
     \centering
@@ -214,11 +193,11 @@ The main result of Task 5.3 in RP2 is the regular use of GeOFF at two facilities
         \node[above] (vis) at (0.0, 0.0) {%
             \includegraphics[width=0.95\textwidth]{graphics/wp5_gsi_frs_vis-3d.png}%
         };
-        \node[below right] (obs) at (1.0, -1.0) {%
-            \includegraphics[width=0.30\textwidth]{graphics/wp5_gsi_clusters-speckled.pdf}%
+        \node[below right] (obs) at (1.5, -1.25) {%
+            \includegraphics[width=0.40\textwidth]{graphics/wp5_gsi_clusters-speckled.pdf}%
         };
-        \node[below left] (res) at (0.0, -0.7) {%
-            \includegraphics[width=0.50\textwidth]{graphics/wp5_gsi_bobyqa.pdf}%
+        \node[below left] (res) at (-1.0, -0.7) {%
+            \includegraphics[width=0.40\textwidth]{graphics/wp5_gsi_bobyqa.pdf}%
         };
         \path[use as bounding box] (res.south west) (vis.north) (obs.south east);
         \begin{scope}[node font=\scriptsize\bfseries, above, inner sep=0]
@@ -229,9 +208,9 @@ The main result of Task 5.3 in RP2 is the regular use of GeOFF at two facilities
         draw=orange,
         ultra thick,
         circle,
-        minimum width=1.2cm,
+        minimum width=2.5cm,
         minimum height=1.4cm,
-        ] (quads) at (1.9, 0.9) {};
+        ] (quads) at (4.5, 2.2) {};
         \begin{scope}[->, >=Triangle, draw=blue, ultra thick, node font=\tiny]
             \draw (obs) -- (obs -| res.east)
             node[midway, above, align=center, text width=1.5cm, outer sep=3pt] {%
@@ -244,79 +223,112 @@ The main result of Task 5.3 in RP2 is the regular use of GeOFF at two facilities
             \draw (quads) -- (obs title);
         \end{scope}
     \end{tikzpicture}
-    \caption{Automatic online focusing for the GSI Fragment Separator (FRS) that uses the BOBYQA algorithm. The gray area in the left figure marks the initialization phase of the algorithm. Convergences has been reached after about 15 iterations. The objective function (left figure, legend) is a scalar measure of how vertical the U91+ beam spot is oriented (right figure). The BOBYQA algorithm optimizes the strength of the quadrupole magnets (top figure).}
+    \caption{Automatic online focusing for the GSI Fragment separator using symplectic methods and BOBYQA algorithm.
+    The gray area in the left figure marks the initialization phase of the algorithm. Convergences has been reached after about 15 iterations. The objective function (left figure, legend) is a scalar given by the symplectic method to measure of how vertical the U91+ beam spot is oriented (right figure). The BOBYQA algorithm optimizes the strength of the quadrupole magnets (top figure).}
+
     \label{fig:wp5_frs}
 \end{figure}
 
-The adaptation of GeOFF to a laser-driven particle accelerator
-at CEA (France) has started in  November 2024. The majority of the work will be carried out, in collaboration with GSI and CERN, by the post-doctoral researcher financed by EURO-LABS at GSI. The first tests on the LPA-UHI100 facility (one of the facilities offering beam time in WP3) will start as soon as the final authorization to shoot full energy on target will be given by the ASN (French Nuclear Safety Authority)/CEA. 
+
+
+The adaptation of GeOFF to a laser-driven particle accelerator at CEA (France) has really started in November 2024, with the arrival of Proxy KAD as a post doctoral researcher, whose contract run up to the end of September 2025. The program is ready to be used but the tests have been delayed, firstly because of the Nuclear Safety Authorization which has been delivered only early this year 2026. The test phase requires shots at full energy on target with maximum repetition rate. 
+GeOFF tests were planned during a beamtime access on the source within the framework of TNA – WP3 (LPAUHI100-01-EOS), initially in may-june 2026. Unfortunately, the beamtime was significantly shortened because of a major failure of the air-conditioning system in the laser room, which remained out of service for several weeks. The first tests that have been done underline the weakness of the network architecture which was not optimized to support the whole process. The new configuration is expected to be deployed by the end of September 2026. 
+The GeOFF optimization toolkit may therefore be used during autumn 2026, as the necessary infrastructure is expected to be ready by then. A source optimization campaign is planned at the LPA-UHI100 facility, providing an opportunity to conduct the first full-scale tests of the toolkit.
+
 
 \subparagraph{Task 5.4: Training} \mbox{}
 
 %\todo{Briefly explain the progress of the %task in context to the DoA.}
 Within WP5, Task 5.4 aims to assure and improve the engagement of the new generation of scientists by the yearly organization of basic and advanced training schools, hosted by different beneficiary institutions of EURO-LABS, as well as the identification and partial support of other training events that are organized in Europe, in order not to duplicate efforts. We have proposed  in this project to have four Basic Training School (BTS) and four Advanced Training School (ATS), and in addition to support events organized by EURO-LABS beneficiaries, that fit the scope of our training aims within Task 5.4. In this way we concentrate in school covering aspects that are not present in the already existing training schools, for instance we put emphasis in training technical personnel although not only them.
-So far we have organised two basic schools: BTS23 in September 13$^{th}$–23$^{rd}$, 2023, at IFIN-HH, Bucharest-Magurele, Romania ((https://indico.nipne.ro/event/246/) and BTS24 in June 18$^{th}$-27$^{th}$ 2024, in Warsaw, Poland (https://www.slcj.uw.edu.pl/en/bts24/), hosted by HIL and ICST, and two advanced schools: ATSOA (Advanced training School on Operation of Accelerators in June 3$^{rd}$ -7$^{th}$, 2024, at CERN (https://indico.cern.ch/event/1357293/) and Advanced School on Open Science and Data Management in November 24$^{th}$-27$^{th}$, 2024, at castle Ebernburgin Bad Kreuznach, Germany , (https://indico.gsi.de/event/19808/). All information about the  schools can be reached from the EURO-LABS web site. The details are also included in the deliverable D5.5 "Report on activities after 2 years, including follow-up from participants" (August 31, 2024) except for the Advanced School on Open Science and Data Management which hands-on material can be found at https://gitlab.in2p3.fr/eurolabs-os-school/teaching/project-zero, for the other material, links are in the slides. These schools were oversubscribed and had students from various parts of the World.  The training Scientific Board (TSB) selected in the first months of the project was involved in the selection of the candidates and in the program for theses hands-on schools. All the organized schools were well attended by students and young researchers from Europe and other continents and were very much appreciated. The Fig.~\ref{fig:ATSOA24} shows two photos taken during the ATSOA 2024 school at CERN. The one on the left during a hands-on work done by one of the subgroups and the other taken during one of the introductory lessons. The hosts asked the participants to answer questions and provide a feedback,  
-%that were later used
-to be used later to improve the organization of the next events. These are given in MS16
+Previously we have reported we have reported on two BTS at Magurele (Romania) and Warsaw (Polonia)  and two ATS one on accelerator at CERN and another on Open Science and Data Management At castle Eberburgin, Bad Kreuznach, Germany.
+During this 3rd reporting period (RP3) many events planned and organized before were taking place, and a few others that the community or the Training Scientific Board (TSB) identified, could be further supported. The events, typically called schools, addressed young graduate, master or PhD students, seldomly early years postdocs, mostly originating and/or affiliated with European institutions, and with a few from other continents. They were organized in several institutions across Europe (CNA Seville, Spain, CERN Geneve, Switzerland/France, GANIL Caen, France, IFIN-HH Bucharest, Romania), participating in the project. To summarize right from the beginning: all the events announced in the EURO-LABS proposal were successfully organized and financed by TSB and a few other schools were logistically and financially supported in part from the funds allotted. All and each of these events were highly appreciated by the participating students and lecturers, and by the EURO-LABS community.  
+
+In the proposal of this project, we planned to organize four Basic Training Schools (BTS) and four Advanced Training Schools (ATS). Five of these took place in RP3; eight other events were supported:  
+
+A.	Schools organized by EURO-LABS during the 3rd reporting period
+\begin{enumerate}
+    \item ATS25 Advanced Technical School on Operation of Accelerators, ATSOA25- at CERN, 12 -16 May 2025, https://indico.cern.ch/e/atsoa2025 
+\item	BTS25 – at CNA Seville, June 2025, Basic Training School on Accelerators Applications in Nuclear Physics - BTS25 (3-9 June, 2025): Overview · Indico
+\item	BTS26 - at IFIN-HH, Bucharest-Magurele, May 11-23, 2026 https://indico.nipne.ro/event/429/ 
+\item	ATS26 - EURO-LABS Advanced Training School on collaborative software development practices (GANIL, Feb 2-6, 2026) https://indico.in2p3.fr/event/37562/ 
+\item	ATS26 - 3rd CERN Advanced Training School on Operation of Accelerators in April 20-24, 2026,  https://indico.cern.ch/event/1615297/ 
+end{enumerate}
+
+The  Fig.~\ref{fig:ATSOA26} shows two photos taken during the ATSOA 2026 school at CERN. The one on the left during a hands-on work done by one of the subgroups at the antiproton Deccelerator control room and the other taken during the presentations done by the teams the last day of the school where they present what they have learnt in the school and the take home messages.
+
+
+B. Events co-sponsored 2025-26 during the 3rd reporting period:
+\begin{enumerate}
+    \item La Rabida school, Rabida, Spain, June 2025, https://institucional.us.es/rabida/index.php 
+    \item NIC XVIII school, Barcelona, June 2025, https://indico.icc.ub.edu/event/341/ 
+    \item CSSP25 – Carpathian Summer School of Physics, Sinaia, June – July 2025,\\
+    https://indico.nipne.ro/event/382/ 
+    \item	CERN Accelerator School dedicated to beam instrumentation in Split, Croatia, Nov. 16-19, 2025 
+https://indico.cern.ch/event/1505399/
+    \item FAIR/GSI analysis training workshop (Feb. 2026, with V. Panin)\\
+    https://indico.gsi.de/event/23397/ 
+    \item FAST26 - Fast timing for nuclear structure and applications - at IFIN-HH, Bucharest, April 2026, https://indico.cern.ch/event/1633228/ 
+    \item 4th PhyNuBe school: Innovative Technologies, Theories, and Methodologies in Nuclear Physics - at GANIL, Caen, May 17-22, 2026,  https://indico.in2p3.fr/event/35170/               
+    \item Cluster 2026, at IOP London, June 8-12, 2026, (https://iop.eventsair.com/clusters26/) 
+    \item ESSENA: "The 13th European Summer School on Experimental Nuclear Astrophysics (Santa Tecla School)” Aci Trezza, Italy, June 14-20, 2026,\\
+    https://agenda.infn.it/event/48509/ .
+    \item Euroschool of Exotic Beams, August 24-29, 2026, Leuven, Belgium.\\
+    https://indico.fys.kuleuven.be/event/172/
+end{enumerate}
 
 \begin{figure}
     \centering
 \begin{minipage}{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{sections/ISOLDE-class.jpg}
+        \includegraphics[width=\textwidth]{graphics/Control-AD-atsoa26.png}
     \end{minipage}
     \hfill % Agrega espacio horizontal
     \begin{minipage}{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{class-alumni.jpg}
+        \includegraphics[width=\textwidth]{graphics/presentacion-atsoa26.png}
     \end{minipage}   
- \caption{Two photohraphs taken during the Advanced School on Operation of Accelerators, held at CERN in June  2024 }
-    \label{fig:ATSOA24}
+ \caption{Two photohraphs taken during the Advanced School on Operation of Accelerators, held at CERN in April  2026. On the left the students in the control room of AD on the right during the team presentations done in every school the last day }
+    \label{fig:ATSOA26}
 \end{figure}
 
+The BTS and ATS schools were fully organized and financed from this project, while those co-sponsored were only financed in part (usually “seed money”), while also logistically supported by our community. Each event had its own website, and all submitted reports that were fully or partially included in EURO-LABS newsletters. 
 
-Additionally, EURO-LABS has supported (co-sponsored) the “AZURE2-R-matrix school” in Edinburgh, June  23$^{th}$–28$^{th}$ 2024, and the Nuclear Physics for Astrophysics NPA XI school in Dresden, Sep. 9-15, 2024. In its latest meeting, the TSB has approved the organization of the remaining two BTS schools at CNA Seville in June 2025 and IFIN-HH in May 2026. TSB reviewed further requests for support (co-sponsorship), from The NIC XVIII school (Barcelona, June 2025), La Rabida School 25 (June 2025) and the Carpathian Summer School of Physics (Sinaia, June 2025). The three requests were accepted and the events are now being organized.
+The BTS and ATS schools were all hands-on events and were very much appreciated by the students, at both levels. The students originated from each of the 3 initial communities that were forming the EURO-LABS, were very much diverse and with good gender equilibrium. Some of the organizers underline that this equilibrium has happened naturally, was not biased by the selection process; we take this as a proof of the present situation of the community. In both cases the selection was based on the profile of the applicants, their motivation and the recommendations of their scientific advisors. This was not an easy task as the rate of applications was more than 2 to 1.  Participants’ appreciations were clearly expressed as “excellent” in their anonymous responses to organizers’ questionnaires.
+
+\begin{figure}
+    \centering
+\begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{graphics/Atsoas-participants.png}
+    \end{minipage}
+    \hfill % Agrega espacio horizontal
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{graphics/Atsoas-nationalities.png}
+    \end{minipage}   
+ \caption{Two photohraphs taken during the Advanced School on Operation of Accelerators, held at CERN in April  2026. On the left the students in the control room of AD on the right during the team presentations done in every school the last day }
+    \label{fig:ATSOA-summary}
+\end{figure}
+
+ The organizer institutions of the BTS 2025 (CNA Seville) and 2026 (IFIN-HH Bucharest) had the common and important feature that they host several (similar) diverse installations, based on high technologies, but appropriate to easy hands-on approaches by students (under supervision) and for applications. Hands-on was the basic principle: the students visited and worked at target-making labs, attended radiocarbon dating at AMS tandetrons, Ion Beam Analysis and nuclear astrophysics (NA) experiments at the 3 MV tandetrons, and nuclear spectroscopy at larger accelerators. Extended visits to other interesting installations in the same institutions were also appreciated due to the possibly of extending students’ direct contact with the scientific world our community works on. Organizers invited only a few (2-3) young, but accomplished scientists for lectures, and at BTS26 a few sponsors were invited to present topics like vacuum and detectors.
+
+ The advanced ATS schools addressed two different domains on one hand the step to steer beam in different facilities, Electron in CLEAR, protons in the ring of the PSBooster , heavy ions at ISOLDE and proton deceleration at the Antiproton decelerator (AD) at CERN. A summary of the success of the ATSOA school was presented in the international Particle Accelerator Conference (IPAC 2026).  On the other hand, as in previous reporting period a school was dedicated to topics newly important for our community, like data management plans. In each event the organizers added social events that allowed the time and conditions for the participants to know each-other better, to know the culture and landscapes of the hosting country or region. The Fig.~\ref{fig:ATSOA-summary} gives a summary on the left plot of the level of the participants in the four ATSOA schools and on the right the distribution by nationalities of the ATSOA participants. 
+
+All information about the  schools can be reached from the EURO-LABS web site. The schools organised by EURO-LABS were oversubscribed and had students from various parts of the World.  The training Scientific Board (TSB) selected in the first months of the project was involved in the selection of the candidates and in the program for theses hands-on schools. {\bf In the end, the “adult supervisors” appreciated the capabilities of the young participants very much, their curiosity, openness, their genuine interest for science in particular, and knowledge in general. We believe our community has a good future ahead of us!}
+
+In addition, TSB and the leadership of our work group, arrived at the conclusion that it is possible and worthy of our attention to support training opportunities that originated from various other groups in the wider European community of science. We could, therefore, co-sponsor events organized across Europe, events that are traditional and with well-established prestige, like the NIC school, La Rabida or the Carpathian schools, but also ad-hoc events that were organized due to the perceived need of specific topics, like the R-matrix, FAST26, Cluster 2026 and the CERN instrumentation school. Funds provided to those events were used to expand the attendance of students and young scientists to events otherwise not accessible to them. 
 
 
-%Currently we are working on the new edition
-We are currently engaged in the organization of the new edition 
-of the advanced school in accelerators, ATSOA25, that will take place in May 12$^{th}$-16$^{th}$ at CERN. 
-%32 applications were received and 
-21 trainees were selected among 32 applications. %The basic School on Accelerator Applications, BTS25, will take place in Seville from 3rd to 9th of June[https://indico.cern.ch/event/1482911/]. The period for application close March 3rd.
-
-All events organized or supported so far were very successful, based on the number of applicants and the positive feedback of the participants (already described in MS16). The organizers and trainers also learned
-%have seen 
-how these events can be even better organized and planned, to further increase the impact and attractiveness for the youngsters.
-Below are some of the main feedback received:
-\begin{itemize}
-\item Hands-on events are the most appreciated by the trainees;
-\item Diversity of equipment and installations used was well appreciated by those who are at the point of choosing a career path for their upcoming careers;
-\item Basic Schools lasting 10-12 days allow the trainees to work directly, to know each-other 
-and form longer term relationship for future strong scientific collaboration and on the personal level friendships.
-\item The younger scientists were the most appreciated trainers.
-\end{itemize}
+In conclusion, from the activities of task 5.4 and from the discussions of the community at the General Assemblies where we reported, we dare to say that {\bf we recommend highly for future European projects to include explicitly and allocate appropriate funds for the training} of the members or future members of our community. In addition to funds to use in common the European research infrastructure, {\bf we need to care early and consistently for the formation, development and education of the human resources} that remains the basis for our present and future. The experience of the four years of Task 5.4 of EURO-LABS shows that the cost for this is small in comparison to the results.
 
 \subsubsection*{Main Results and Achievements}
 
 %\todo{Briefly summarise the main results and achievements of the WP in context of the DoA.}
-The main results of WP5 in RP2 correspond to the achieved deliverables: the videos of the facilities were completed and EURO-LABS activities on social media platforms have started; concerning open data, different data lake prototypes are being developed/tested; 
+The main results of WP5 in RP3
+correspond to the achieved deliverables: the videos of the facilities were completed and EURO-LABS activities on social media platforms have started; concerning open data, different data lake prototypes are being developed/tested; 
 the new GeOFF toolkit, based on Machine Learning techniques was deployed at two facilities (GSI and CERN) and used for beam optimization. Finally, under Task 5.4 (Training), after the selection of the Training Scientific Board (TSB) was completed (by Feb. 2023), the training  activities were aligned with the EURO-LABS purposes %initial proposal 
 and overseen by the TSB. Basic Training Schools (BTS) and Advanced Training Schools on Operation of Accelerators (ATSOA) were organized:
 
-BTS23 at IFIN-HH, Bucharest-Magurele, Romania
-
-BTS24, at HIL and INC, Warsaw, Poland
-
-ATSOA24 at CERN, Geneve, Switzerland / France
-
-ATSOSDM24 at GSI/FAIR, Darmstadt, Germany
-
-For 2025 we are preparing
-(organization in progress)
-ATSOA25, at CERN in May, and
-BTS25 in Seville, Spain in June.
-
-Two schools were co-sponsored in 2024 and three more were approved for co-sponsorship in 2025.
 
 \subsubsection*{Deviations and Corrective Actions}
 \label{sec:wp5_deviations}

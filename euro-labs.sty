@@ -32,11 +32,91 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{float}
+\usepackage{comment}
 
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage[most]{tcolorbox} % For colored boxes
 \usepackage{xcolor}
+
+% ==================================================
+% GRAPHICS PATH DEBUGGING
+% ==================================================
+
+% \usepackage{graphicx}
+% \usepackage{xcolor}
+
+% Graphics search directories
+\graphicspath{{graphics/}{graphics-pr2/}}
+
+% ---- DEBUG SWITCH ----
+\newif\ifdebuggraphics
+
+\debuggraphicstrue       % Enable red frames
+% \debuggraphicsfalse    % Disable red frames
+
+
+% ---- DETECT THE ACTUAL GRAPHICS FILE ----
+\makeatletter
+\let\OrigGinSetfile\Gin@setfile
+
+\def\Gin@setfile#1#2#3{%
+  \xdef\LastGraphicsPath{\Gin@base#2}%
+  \OrigGinSetfile{#1}{#2}{#3}%
+}
+\makeatother
+
+
+% ---- SAVE ORIGINAL INCLUDEGRAPHICS ----
+\let\OrigIncludeGraphics\includegraphics
+\newsavebox{\GraphicsDebugBox}
+
+
+% ---- CONDITIONAL RED FRAME ----
+\ExplSyntaxOn
+\cs_new_protected:Npn \graphics_debug_output: {
+  \ifdebuggraphics
+    \str_if_eq:eeTF
+      {
+        \exp_args:Ne \str_range:nnn
+          { \LastGraphicsPath } { 1 } { 13 }
+      }
+      { graphics-pr2/ }
+      {
+        \fcolorbox{red}{white}{
+          \usebox{\GraphicsDebugBox}
+        }
+      }
+      {
+        \usebox{\GraphicsDebugBox}
+      }
+  \else
+    \usebox{\GraphicsDebugBox}
+  \fi
+}
+\ExplSyntaxOff
+
+
+% ---- REDEFINE INCLUDEGRAPHICS ----
+\RenewDocumentCommand{\includegraphics}{s O{} m}{%
+  \begingroup
+  \sbox{\GraphicsDebugBox}{%
+    \IfBooleanTF{#1}
+      {\OrigIncludeGraphics*[#2]{#3}}
+      {\OrigIncludeGraphics[#2]{#3}}%
+  }%
+  \csname graphics_debug_output:\endcsname
+  \endgroup
+}
+
+% ==================================================
+% END GRAPHICS PATH DEBUGGING
+% ==================================================
+
+% --- enable frames or not
+\debuggraphicstrue
+% \debuggraphicsfalse
+
 \usepackage{soul}
 \usepackage{colortbl}
 \usepackage{wallpaper}
@@ -58,6 +138,8 @@
 \usepackage{pdflscape}   % For landscape pages
 \usepackage{afterpage}   % For executing commands after the current page
 \usepackage{sidecap}     % to allow figures with side caption
+\usepackage{subcaption}  % to allow sub-figures (mm 10/11/26)
+\usepackage{comment}     % to allow commenting out blocks (mm 10/11/26)
 \usepackage{siunitx}
 % \usepackage{titlesec}
 

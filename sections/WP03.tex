@@ -82,25 +82,25 @@ R\&D across Europe.
 
 \subsubsection*{Status}
 
-\begin{prtwo}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.98\linewidth]{graphics-pr2/WP3-TAstatistics-1.png}
-    \caption{Distribution of WP3 Access Units (typically hours of beam time) delivered in P2 and cumulative for the full duration of the project. The values in the Nominal column represent the fraction of AU for the 18 months of the P2 (37.5\%) or to the 30 months for P1 and P2 (62.5\%) assuming a linear profile.}
+    \includegraphics[width=0.98\linewidth]{graphics/WP3_TAsummary-innumber.pdf}
+    \includegraphics[width=0.98\linewidth]{graphics/WP3_TAsummary-inpercent.pdf}
+    \caption{Access Units (AUs) delivered by the WP3 facilities in P3 and cumulatively over the full duration of the project, shown as absolute numbers (top) and as a percentage of the total AUs planned in the GA (bottom).}
     \label{fig:wpe-taunits}
 \end{figure}
-Over the 18 months covered in P2, the WP3 TA facilities have generally been rather successful in achieving the delivery of transnational access to users. Overall 4799 AU were delivered during P2, representing 84\% of an assumed linear fraction for these 18 months of the AU promised in the GA. The cumulative total for P1 and P2 raises to 7180 AU delivered, corresponding to 55\% of the total number of planed AU for the duration of hte project. This may sound small, however factoring out the facilities where technical or administrative hurdles impacted their capacity to deliver AU, this raises to 76\% which is well within expectations for this stage of the project. The distribution of the AU delivered per TA faciliy is shown in Fig~\ref{fig:wpe-taunits}.
-\end{prtwo}
 
-\begin{prtwo}
-The imbalance between facilities that have exceeded expectations in delivering transnational access (TA) units and those that have experienced inactivity has been thoroughly discussed during the Task and WP meetings. It was agreed that progress will continue to be closely monitored over the coming months. In parallel, a plan has been developed involving a reshuffling of project resources between facilities. This strategy aims to provide additional support to high-demand facilities and ensure the smooth operation of TA delivery for the benefit of the Users.
-\end{prtwo}
+Over the 18 months covered by P3, the WP3 TA facilities provided a significant amount of transnational access to users, delivering a total of \textbf{8,506 Access Units (AUs)} (typically hours of beam time), through \textbf{40 projects}. The distribution of AUs delivered by each facility is shown in Fig.~\ref{fig:wpe-taunits}.
 
-\begin{prtwo}
-Beyond transnational access, steady progress has been achieved in the service improvements planned for eight facilities. In most cases, the implementation is ongoing, with the goal of completing these improvements and making them fully operational for the Users before the end of the project.
-\end{prtwo}
+Highlights of the experimental results obtained by the TA projects at the WP3 facilities are presented in Section~\ref{sec:wp3_scientific_output}.
 
-% \todo{Briefly explain the status of the WP.}
+As in previous reporting periods, the level of TA delivery varied across WP3 facilities during P3. Some facilities maintained a high level of activity, with four exceeding their total planned AUs, partly thanks to the reallocation of funds. Others, however, were unable to provide access due to technical or operational constraints.
+
+Early in PR3, measures were taken to address this imbalance and make better use of the available resources. Following discussions at the Task and WP levels, funds were redistributed, first between facilities within the same Task, then across WP3, and finally to other WPs in the project. This approach allowed unused resources to be redirected towards facilities with higher demand and the capacity to provide additional access.
+
+As a result, several facilities were able to accommodate more user projects and deliver additional AUs, in some cases exceeding their original allocations. This helped maintain a high level of TA activity despite the difficulties faced by some facilities, while supporting important ongoing research in the accelerator field.
+
+Beyond transnational access, good progress was also made on the service improvements planned for eight facilities. \textbf{The planned improvements were successfully completed}, in some cases benefiting from additional funds made available through the redistribution of resources. Most of these improvements have already been put into operation, enhancing the facilities' capabilities and providing direct benefits to users.
 
 \subsubsection*{Progress per Task}
 
@@ -108,7 +108,7 @@ Beyond transnational access, steady progress has been achieved in the service im
 
 This task force includes only the HiRadMat Facility at CERN. 
 
-\subparagraph{HiRadMat at CERN}
+\subparagraph{HiRadMat at CERN} \mbox{}
 
 The HiRadMat facility of CERN / SPS has been in high demand within the international research community for the full duration of the project. After the 4800 AUs initially allocated were fully committed by M32 of the project, an additional 4336 AUs were granted, nearly doubling the access provision. A total of 9360 AUs have been delivered, providing transnational access to 11 experimental campaigns, counting 48 sub-projects, over the 4-year period. The allocation of AUs throughout the project can be seen in Figure~\ref{fig:wp3-hrmt-stat}, while Figure~\ref{fig:gender_distr_hiradmat} shows the gender and age distribution of the funded users in HiRadMat.
 
@@ -162,17 +162,11 @@ HiRadMat continued to provide transnational access (TA) to several users to cond
 
 The obtained results were achieved thanks to the uniqueness of the facility, combining SPS beam energy, pulse intensity, and dedicated experimental infrastructure available at HiRadMat. This led to a consistent high demand of the facility throughout the project, along with sustained engagement from the international user community.
 
-%Highlights of the experimental results from the funded projects are presented in Section~\ref{sec:wp3_scientific_output}.
 
 \paragraph{Service improvements:}
 
 EURO-LABS supported service improvement studies for HiRadMat, focused on enhancing the calibration of the SPS Beam Position Monitor (BPM) system (designated "ALPS") in both the ring and the extraction line toward the facility. The studies led to the development of a systematic approach to optimise neural network models for accurately determining transverse beam position from BPM electrode signals. Additionally, they quantified training uncertainties and assessed the robustness of different network configurations.
-
-A key element to highlight was the evaluation of the robustness and reproducibility of the training procedure. Repeated training enabled a systematic assessment of training variability and comparison of different network architectures, leading to the identification of a preferred feedforward network configuration. Further optimisation of some training parameters will be performed, in order to complete the evaluation of feedforward networks for SPS BPM calibration.
-
-The results represent an important milestone from demonstrating the feasibility of machine learning approach towards a robust and reproducible calibration method suitable for practical implementation in the BPM system of the SPS. In particular, the main contribution provides an improvement of stability and reproducibility of beam delivery across the SPS complex and its wider experimental programme.
-
-\begin{figure}[!h]
+\begin{figure}[!htb]
     \centering
     \includegraphics[width=0.48\linewidth]{graphics/ServiceImprovements.png}
     \includegraphics[width=0.48\linewidth]{graphics/ServiceImprovements (2).png}
@@ -180,482 +174,262 @@ The results represent an important milestone from demonstrating the feasibility 
     \label{fig:wp3-hrm-si}
 \end{figure}
 
+A key element to highlight was the evaluation of the robustness and reproducibility of the training procedure. Repeated training enabled a systematic assessment of training variability and comparison of different network architectures, leading to the identification of a preferred feedforward network configuration. Further optimisation of some training parameters will be performed, in order to complete the evaluation of feedforward networks for SPS BPM calibration.
+
+The results represent an important milestone from demonstrating the feasibility of machine learning approach towards a robust and reproducible calibration method suitable for practical implementation in the BPM system of the SPS. In particular, the main contribution provides an improvement of stability and reproducibility of beam delivery across the SPS complex and its wider experimental programme.
+
+
+
 \subparagraph{Task 3.2 : Technology Infrastructures} \mbox{}
 
-\begin{prtwo}
-This task includes six specialized facilities focused on accelerator component R\&D also connected to the AMICI~\footnote{\url{https://amici.ijclab.in2p3.fr/}} collaboration. The facilities remain in close contact with ongoing R\&D initiatives in EUROPE as the I.FAST project~\footnote{\url{https://ifast-project.eut}} but also world-wide as PIP-II~\footnote{\url{https://pip2.fnal.gov}}, where demand for tests of magnets and superconducting cavities could arise, in an effort to attract users. However already observed in P1, only three of these facilities have so far been able to support TA projects and deliver Access Units (AUs).
-\end{prtwo}
+This task includes six specialized facilities focused on accelerator component R\&D. The facilities remain in close contact with ongoing R\&D initiatives, both in Europe, such as the I.FAST project\footnote{\url{https://ifast-project.eu}}, and worldwide, such as PIP-II\footnote{\url{https://pip2.fnal.gov}}, where a demand for tests of magnets and superconducting cavities has arisen. 
+Technical work or upgrades initiated by the facilities' management to support long-term service contracts with large projects have reduced the availability of certain infrastructures for individual TA projects eligible for EURO-LABS funding. This is particularly the case for INFN-LASA, where, thanks to the efforts of the WP and Task Leaders and of the local Technical Coordinator, at least one TA project could be carried out. By contrast, the INFN-THOR, CERN-XBOX and UU-FREIA facilities did not host any TA projects, as explained below.
 
-\begin{prtwo}
-Technical works or upgrades initiated by the facilities' management to support long-term service contracts with large projects have reduced the availability of certain infrastructures for individual TA projects eligible for EURO-LABS funding. This is particularly the case for the INFN LASA and THOR facilities, as explained in more detail below. Additionally, the unexpected loss of local technical expertise, combined with difficulties in assigning replacements, has blocked the UU-FREIA facility from continuing to provide TA, despite its promising start during P1.
-\end{prtwo}
+In summary, during the 18 months of P3, a total of 569 AUs were delivered, mainly through remote access, bringing the cumulative total since the beginning of EURO-LABS to 1,645 AUs. This corresponds to 19\% of the planned AUs when considering only the operational facilities, or 17\% when considering all six facilities as initially foreseen in the Grant Agreement.
 
-\begin{prtwo}
-During the 18 months of P2, a total of 584 AUs were delivered, mainly through remote access, bringing the cumulative total since the beginning of EURO-LABS to 1,076 AUs. This corresponds to 26\% of the planned AUs if only considering operational facilities, or 12\% when considering all six facilities as initially foreseen in the Grant Agreement.
-\end{prtwo}
+The WP and Task Leaders implemented the planned mitigation measures, reallocating the resources freed up by these facilities to other tasks in WP3 (in particular Tasks 3.1 and 3.3), with part of them transferred to WP2.
 
-\begin{prtwo}
-The WP and Task Leaders are closely monitoring the situation. There is optimism that, with the completion of technical works in 2025, some facilities will be able to resume the delivery of TA projects, with discussions already underway. In parallel, a mitigation plan has been prepared, which foresees a reshuffling of resources within the Task, and, if necessary, at the WP level.
-\end{prtwo}
-
-\begin{prtwo}
 Details per facility are provided in the following paragraphs.
-\end{prtwo}
-
-% \todo{Briefly explain the progress of the task in context to the DoA.}
 
 \subsubsection*{Main Results and Achievements}
 
 % \todo{Briefly summarise the main results and achievements of the WP in context of the DoA.}
 
-\subparagraph{UU-FREIA}
+\subparagraph{UU-FREIA} \mbox{}
 
-\begin{prtwo}
-FREIA had a spectacular startup during P1, delivering 50\% of the AUs promised in the Grant Agreement. However, during P2, FREIA has not provided any transnational access (TA). Although there were preliminary discussions about testing a PIP-II cavity, unfortunately no follow-up actions materialized.
-\end{prtwo}
+After a strong start in P1, when it delivered 50\% of the AUs foreseen in the Grant Agreement, FREIA provided no transnational access in P2 or P3. Preliminary discussions on testing a PIP-II cavity did not lead to any follow-up.
 
-\begin{prtwo}
-A key limiting factor is the facility’s availability for small, short-term TA projects, given its current engagement in large-scale, long-term contracts for series testing of production modules destined for major future accelerator installations in Europe. This series testing significantly restricts the use of the liquefier, a critical component for carrying out short-term experimental work. In addition, the facility experienced the departure of a key mechanical engineer — an expert in cryogenics with deep knowledge of the installation — without a rapid replacement, further complicating the planning of future tests.
-Nevertheless, all efforts will continue to be made to support any future TA requests should they arise.
-\end{prtwo}
+The main obstacle was the limited availability of the facility for small, short-term TA projects, owing to its commitment to large, long-term contracts for the series testing of production modules for major future European accelerators. These tests heavily constrain the use of the liquefier, which is essential for short experimental campaigns. 
 
+The resources not used by FREIA were reallocated within WP3 as part of the mitigation plan described above.
 
-% \todo{I am waiting a summary fro Rocio on the status of the service improvements}
+\subparagraph{INFN-LASA} \mbox{}
 
-%To answer your questions/s: yes, they are interested in using our facility and will sign the document (it’s already done by our side), but you know how it is with especially MYRRHA, we are requested to not give any information (let it be slides, or just in a general chat) if it has not been previously approved by them. And even more without a signed contract…So unfortunately this is not just because we do not have yet have a signed contract, this will always be the case: they being mention in any way in future slides will need to be sent for their approval.
- 
+INFN-LASA (Laboratory for Accelerators and Applied Superconductivity) operates four test facilities, dedicated to superconducting magnets, superconducting RF cavities, high-brightness photocathodes for electron sources, and laser applications to high-power Fabry--Perot cavities and advanced timing systems, originally conceived to support the laboratory's internal research. Opening them to external users proved slower than planned: the limited staff were heavily involved in planning the expansion of the laboratory, which will double its surface area, while the upgrade of critical infrastructures (electrical systems and cooling systems for cavities and magnets) made the facilities unavailable to external users. Once these upgrades were completed, in the second part of 2025, several access requests were discussed, from DESY and CEA, JLab, IJCLab and Uppsala University, covering tests of SC RF cavities, laser systems and a high-voltage DC photocathode test stand, although their realisation was constrained by the limited remaining time and the availability of resources such as liquid helium.
 
-% I write you because we are in initial discussions with FNAL about the possibility of testing a PIPII cavity in Gersemi, and I have a question that I forgot the answer to after the SAM…Provided the TA is granted by the committee, the total amount of units that FREIA can provide, is it the 20\% of the total? For example, FREIA has a total of 960 TA units, could we then only provide max 192 TA units for this test? So could they then pay the rest of the amount themselves if needed?
+In the end, LASA was able to host a single TA project in June 2026, shortly before the end of EURO-LABS. The project, carried out in collaboration between CEA-Saclay, Fermilab and LASA, aims to develop plasma processing for the PIP-II 650~MHz 5-cell low-beta (LB650) cavities. Plasma processing is an established technique for mitigating field emission and multipacting, which limit the accelerating gradient of SRF cavities. Building on earlier simulations of plasma ignition in this geometry, the project focused on the first experimental tests at LASA, using an LB650 cavity equipped with a cryomodule-style high-power coupler, a key step towards demonstrating the technique under realistic operating conditions.
 
-% Since we do not know how is it going to look in the future for us (since we will have the liquefier kind of blocked by Minerva testing, with some small slots here and there, maybe) we would like to have this test done and accounted, even though it is not from an European Institution.
+The resources not used by INFN-LASA were reallocated within WP3 as part of the mitigation plan described above.
 
-\subparagraph{INFN-LASA} 
+\subparagraph{INFN-THOR} \mbox{}
 
-\begin{prtwo}
-LASA (Laboratory for Accelerators and Applied Superconductivity) hosts four test facilities dedicated to: superconducting (SC) magnets, superconducting (SC) RF cavities, high-brightness photocathodes for electron sources, and laser applications to high-power Fabry–Perot cavities and advanced timing systems. These facilities were initially conceived to support LASA’s internal research activities.
-\end{prtwo}
+The INFN-THOR (Test in HORizontal) facility in Salerno is dedicated to testing superconducting magnet systems and is equipped with advanced cryogenic, vacuum and electrical test set-ups. Throughout the project, its activity has been driven by the high-priority support to GSI/FAIR: until June 2024, the facility performed the final acceptance tests of the SIS100 quadrupole doublet modules before their installation in the SIS100 tunnel in Darmstadt, and from July 2024 to February 2025 it was closed to external users for an upgrade and consolidation aimed at improving its efficiency and testing throughput.
 
-\begin{prtwo}
-So far, LASA has not been able to accept any transnational access (TA) projects. The transition of these facilities towards external user access progressed more slowly than initially anticipated during 2023, due to two main factors. First, a significant portion of the researchers and the already limited technical support staff were heavily involved in planning the expansion of LASA’s infrastructure, which is set to double the laboratory’s surface area. Second, the gradual conversion and upgrading of critical infrastructures — including electrical systems and the cooling systems for cavities and magnets — toward the new layout and future installations blocked the availability for external users.
-\end{prtwo}
+In P3, INFN-THOR remained fully engaged in the series production of superconducting magnets for GSI/FAIR and could not host any TA project.
 
-\begin{prtwo}
-According to the current planning, these upgrade activities of LASA are expected to be completed in 2025. If this timeline is met, it would leave sufficient time to consider few TA requests until the project ends in 2026 from the pool of users who had already expressed interest in 2023, assuming their interest remains active.
-\end{prtwo}
+The resources not used by INFN-THOR were reallocated within WP3 as part of the mitigation plan described above.
 
-% LASA (Laboratory for Accelerators and Applied Superconductivity) is characterized by the presence of four test facilities devoted to: Superconducting (SC) Magnets, Superconducting (SC) RF Cavities, High Brightness Photocathodes for Electron Sources and Laser Applications to High Power Fabry Perot Cavities and Advanced Timing Systems. The four facilities have been conceived as facilities to support the research activities undergoing at LASA.
+\subparagraph{IJCLab/SUPRATECH} \mbox{}
 
-%So far LASA was not able to accept any TA project. This because the activities relating to a transition of these facilities towards use by external users slowed down during 2023 compared to the initial expectations for two reasons: first, the commitment of a relevant part of the researchers involved and of the technical support (the latter already quite limited) of the laboratory in relation to the planning of the expansion of the LASA (by a factor equal to approximately 100\% of the surface), and second the gradual conversion of the current infrastructures relating to the electrical systems and the cavity and magnet cooling system towards the new layout and future installations.
+No Transnational Access (TA) was offered during the reference period, as the facility was fully committed to upgrading its cryostat and preparing for testing activities associated with the PIP-II production phase (2026–2027), leaving no availability for external R\&D users.
 
-% In the present planning these activities should be completed in 2025, which if indeed the case, leaves time to consider TA requests among the few who expressed interest already in 2023, should their interest remains. 
+The remaining funds were reallocated to other facilities.
 
-% Once these activities have been completed, we are now able to prepare the forwarding of requests discussed and received in the meantime in relation to some specific activities.
-%Of course due to the specific period of the year we have to discuss the confirmation for these previous requests. 
+\subparagraph{CEA-IRFU/Synergium} \mbox{}
 
-%Superconducting cavities: we discussed a request from researchers from DESY and CEA for the test of a prototype SC RF cavity for the PIP II project. The test will last a week considering 3 days for cooling down and one for warming up. The measurement process will last 2 days (for a total of nearly 12 hours/each day to save on liquid helium). Looking at the relatively short time dedicated to the measurements we are evaluating the possibility to operate in a remote fashion.
-%The same opportunity for a separate test with longer measurements time involved will be used by a researcher from JLab to learn as much as possible on handling SC RF cavities for an ERL Linac of mutual interest. For this request we have to consider also some issue related to the availability of the requested volume of liquid helium (1500 liters) with so a short forewarning.
+The CEA-IRFU Synergium hosts two platforms specialised in material science at cryogenic temperatures: \textbf{MACHAFILM} and \textbf{CRYOMECH}. Its cryogenic laboratories are involved in several European accelerator projects on superconducting RF (SRF) and magnet technology, with strong collaborative ties to major institutes in Europe (CERN, INFN, STFC, HZB, CNRS) and worldwide (FNAL, JLab). Through these links, the MACHAFILM platform supported two remote-access TA projects in the previous reporting periods.
 
-%Laser applications: a request has been discussed about a user from IJCLab and University of Orsay to carry out measurements on the laser system available at LASA for photocathode and Fabry Perot cavity. He plans to stay here a week (5 days) working 8-10 hours every day. This would be the first activity of a longer usage of our facility.
+In P3, MACHAFILM hosted four TA projects, delivering 467 AUs and thus completing the 755 AUs planned in the GA. Two projects were carried out with DESY: a cavity test (Marc Wenskat, DESY; 60 AUs), scheduled for 19/03--01/04/2026 and completed in August 2026 owing to a delay in the delivery of the cavity, and a quadrupole resonator (QPR) campaign in collaboration with HZB (Marc Wenskat, DESY, and Oliver Kugeler, HZB; 104 AUs), which started in June 2025 and was completed in July 2026, as the QPR was received from HZB only in May 2026. Two further projects, both starting on 01/10/2025, were carried out for STFC: cavity tests (143 AUs), completed in July 2026 when the cavities were shipped back after delays in the delivery of hardware components from STFC, and tunnelling spectroscopy and surface characterisation of STFC samples (160 AUs), completed in March 2026.
 
-%High Brightness Photocathodes: a request has been recently issued to make some tests on a HV DC test stand related to the development of a DC Gun to investigate the behavior of specific materials handling High Voltage. The request come from the University of Uppsala. This request would be the first of a few, involving also tests with materials at cryogenic temperature.
+As part of the service improvements, new instrumentation for magnetometry and tunnelling spectroscopy (including Cernox temperature sensors) was installed at MACHAFILM, and X-ray diffraction fitting software was developed to extract the grain size and strain parameters of user samples. In addition, dedicated software to model the behaviour of liquid helium and the mechanical properties of materials at cryogenic temperatures was purchased for the CRYOMECH platform. These additions were used in the TA tests and extended the facility's capabilities.
 
+\subparagraph{XBOX} \mbox{}
 
-\subparagraph{INFN-THOR}
-
-\begin{prtwo}
-The THOR (Test in Horizontal) facility in Salerno is focused on superconducting magnet systems testing. Equipped with advanced cryogenic, vacuum, and electrical testing setups, the facility ensures high-quality assessments of critical technologies in the field of superconductivity. 
-\end{prtwo}
-
-\begin{prtwo}
-However up to June 2024 the Facility was fully engaged in supporting the development and testing of accelerator components, particularly for the GSI/FAIR project. Specifically, a series of tests on the SIS100 quadrupole doublet modules for the test facility FAIR have been performed for the final acceptance before their installation in the SIS100 tunnel now under construction in Darmstadt. Given the tight timeline of the test plan, the allocated time for Transnational Access (TA) was so far limited. This constraint was primarily due to the high-priority testing schedule, which required significant resources and time allocation.
-\end{prtwo}
-
-\begin{prtwo}
-Starting from July 2024, access to the THOR facility has been restricted due to an ongoing upgrade and consolidation. This upgrade aims to enhance the facility’s capabilities, improving efficiency and increasing the throughput of testing activities. Consequently, no external access could be scheduled during this period and until February 2025.
-\end{prtwo}
-
-\begin{prtwo}
-By March 2025, the commissioning of a fully equipped test facility will start, providing testing opportunities for TA users in the field of cryogenic, vacuum, electronics. However the continous engagement of the Facility management to support the GSI/FAIR project as high-priority poses potential constraints on planning TA access. All efforts will be made to accommodate possible external access slots, should the interest arises. 
-\end{prtwo}
-
-\subparagraph{IJCLab/SUPRATECH}
-The facility is actively participating to the significant European In-kind contribution  to the PIP-II project of FermiLab (USA) achieving through RAs to perform the tests and full validation of SC cavities designed within the project and fabricated in Italy. The SUPRATECH maintains as well strong links with the CEA/IRFU Synergium facilities, offering combined surface processing of accelerator components for R\&D activities. 
-During the reference period SUPRATECH offered remote access to three projects, delivering 296 AU, corresponding to 46\% of the total AU promised in the GA. 
-
-
-% Three projects during the reference period. 
-
-%For Zanon company (Italy) : Testing at cryogenic temperature of 3 prototypes Spoke resonator (SSR2) for PIP2 project
-%All three cavities tested and shipped to Fermilab
-%2 cavities have been validated and reached PIP-II project specifications
-%1 not validated but shipped to Fermilab for R\&D tests
-%Testing report issued to Zanon company.
-%For Fermilab (USA) : 2 cryogenic tests of 1 prototype Spoke resonator (SSR1) before/after plasma processing.
-%Under validation by USP
-
-\subparagraph{CEA-IRFU/Synergium}
-
-\begin{prtwo}
-The CEA-IRFU Synergium hosts two platforms: \textbf{MACHAFILM} and \textbf{CRYOMECH}, specialized on material science at cryogenic temperatures. The Synergium cryogenic laboratories are involved in several European accelerator projects on superconducting RF (SRF) and magnet technology with strong collaborative ties with major institutes in Europe: CERN, INFN, STFC, HZB, CNRS, and world-wide: FNAL and JLAB. Through these links MACHAFILM platform have performed well supporting two TA projects for remote access, delivering so far 45\% of the AU promised in the GA.
-\end{prtwo}
-
-\begin{prtwo}
-On the Service Improvements, in the MACHAFILM facility improvements on the magnetometry and tunnelling spectroscopy was set up (Cernox temperature sensors), and X-ray diffraction fits analysis software was developed to extract the grain size and strain parameters of received samples.  The funds were also used to purchase a  dedicated software to model the behaviour of liquid Helium and mechanical properties at cryogenic temperature on the CRYOMECH Platform.
-\end{prtwo}
-
-\subparagraph{XBOX}
-
-\begin{prtwo}
 The XBOX facility hosts klystron-based X-band test stands located at CERN. These test stands are dedicated to the testing and development of high-gradient accelerating structures and high-power RF components, initially developed for the CLIC project, but also applicable to R\&D for X-band FELs, Compton/Thomson sources, and potential RF units for linear accelerators. As a result, XBOX offers unique, state-of-the-art yet highly specialized capabilities, which makes it challenging to meet a broader and more diverse needs of a wider external user community.
 Despite sustained publicity efforts during the reference period, the XBOX facility did not attract any new transnational access (TA) projects. 
-\end{prtwo}
 
 \subparagraph{Task 3.3 : Electron and Plasma Beams} \mbox{}
 
 % \todo{Briefly explain the progress of the task in context to the DoA.}
 
-\begin{prtwo}
-This task includes six facilities located across three laboratories, offering access to electron or plasma beams.
-\end{prtwo}
+This task includes six facilities located across four laboratories, offering access to electron or plasma beams.
 
-\begin{prtwo}
-A combination of technical, safety, and administrative issues has prevented three of the facilities from becoming operational and providing access units since the beginning of EURO-LABS. The fourth facility, is a state-of-the-art plasma beam installation, which is currently being upgraded, thus not yet easily accessible to external users. The remaining two facilities were fully active in P2 and have performed exceptionally well, delivering 65\% more AUs than expected for the 18-month period of P2, raising the cumulative total to 1490 AUs since the start of the project. This figure for the two facilities, represents 34\% more AUs than originally promised at this stage, demonstrating their strong potential to absorb additional TA requests and potentially compensate for the lack of access at other facilities.
-\end{prtwo}
+During P3, the four operational facilities hosted 15 TA projects and delivered a total of 2,100 AUs. KIT-KARA was the main contributor: thanks to the reallocation of resources, it delivered more AUs than initially planned in the GA. The second KIT facility, FLUTE, hosted one project before being dismantled for an upgrade. INFN-BTF was also active, hosting four TA projects, while the UHI100 facility at CEA-LIDYL overcame the administrative issues related to its operating licence and was able to host a project just before the end of EURO-LABS. By contrast, unexpected incidents prevented any access to the CLARA facility in the UK, despite the preparations made and the expectations for its use. 
 
-\begin{prtwo}
-Beyond the TA projects, good progress has also been made on the Service Improvements, with the projects entering their implementation phase as planned.
-\end{prtwo}
+Beyond the TA projects, all Service Improvements, mainly at KIT-KARA, were successfully completed and are already being used.
 
-\begin{prtwo}
-Details for each facility are provided in the following paragraphs
-\end{prtwo}
+Details for each facility are provided in the following paragraphs.
 
 \subsubsection*{Main Results and Achievements}
 
 %\todo{Briefly summarise the main results and achievements of the WP in context of the DoA.}
 
-\subparagraph{INFN-LNF}
+\subparagraph{INFN-LNF} \mbox{}
 
-\begin{prtwo}
-The Frascati National Labs (LNF) of the Italian Institute for Nuclear Physics (INFN) offers TA through 2 facilities: BTF (Beam Test Facility) and SPARCLAB (Sources for Plasma Accelerators and Radiation Compton with Laser And Beam).
-\end{prtwo}
+The Frascati National Laboratories (LNF) of the Italian Institute for Nuclear Physics (INFN) offer TA through two facilities: BTF (Beam Test Facility) and SPARC\_LAB (Sources for Plasma Accelerators and Radiation Compton with Laser And Beam).
 
-\begin{prtwo}
-BTF is an infrastructure mainly dedicated to the development and testing of particle detectors, providing primary, fixed energy beam and secondary electron or positron beams with continuously tunable energy from \SI{30}{\MeV} to \SI{780}{\MeV} and multiplicity from $10^{10}$ particles/pulse down to a single particle/pulse in a Poisson stochastic regime.
-SPARCLAB is a research infrastructure based on the combination of the high-brightness SPARC photo injector, providing electron beam at energies up to \SI{180}{\MeV}, with the high intensity FLAME laser, able to generate infrared laser pulses with $10^{19}$~W/cm$^2$ intensity. The facility is generally devoted to the R\&D on novel acceleration techniques, advanced diagnostics and generation of radiation ranging from THz to extreme UV light. 
-\end{prtwo}
+\textbf{BTF} is mainly dedicated to the development and testing of particle detectors. It provides a primary beam of fixed energy and secondary electron or positron beams with continuously tunable energy from \SI{30}{\MeV} to \SI{780}{\MeV} and multiplicity from $10^{10}$ particles/pulse down to a single particle/pulse in a Poisson stochastic regime.
 
-\begin{prtwo}
-In the reporting period both facilities have been in operation apart from some maintenance periods and, mostly for SPARCLAB, upgrade and installation activities.
-\end{prtwo}
+\textbf{SPARC\_LAB} combines the high-brightness SPARC photo-injector, providing electron beams with energies up to \SI{180}{\MeV}, with the high-intensity FLAME laser, which generates infrared laser pulses with an intensity of $10^{19}$~W/cm$^2$. The facility is mainly devoted to R\&D on novel acceleration techniques, advanced diagnostics and the generation of radiation ranging from THz to extreme UV light.
 
-\begin{prtwo}
-\begin{description}
+During P3, BTF operated smoothly and regularly and hosted four TA projects, described below. SPARC\_LAB, by contrast, did not provide any TA during the project. Its operation was limited by a total of six months of shutdown, needed to carry out a consolidation and upgrade programme and to install SABINA, a new facility for FEL radiation production in the THz range. This programme was partly funded by the regional government and followed a fixed timeline that could not be postponed. In addition, SPARC\_LAB is the test stand for the R\&D on plasma acceleration that underpins EuPRAXIA, the laboratory's flagship project, and this work had the highest priority during operation. Together, the installation of the new facility and the priority given to the internal scientific programme left no room for TA slots. The resources planned for SPARC\_LAB were therefore reallocated to BTF.
 
-\item[INFN-LNF/BTF]
-The operation of BTF in the reporting period has been quite smooth and regular. According to its specific inclination, the facility run for a wide user community in terms of research fields and geographical distribution (national and international). In this context the implementation of the TA modality supported by EUROLABS resulted to be almost straightforward. In the reporting period the facility provided access to 3 EUROLABS supported experiments, for a total of 4 weeks of run delivering 672 AUs, corresponding to 57\% of the promised total in the GA. 
+Serving a broad user community, both in terms of research fields and of national and international origin, BTF delivered 1,176 AUs, a figure equal to the total planned in the GA for the whole project. Thanks to the resources reallocated from SPARC\_LAB, INFN-BTF closed the project having delivered 157\% of its planned AUs. The four experiments were: \textit{Pcube\_DIAG\_TEST}, the characterisation of a PSI-Pcube diagnostics chamber prototype (view screen and scintillating fibre) as a function of the charge and energy of the BTF e$^-$/e$^+$ beam; \textit{CoMOMDeMPE}, a detector control system for managing physics experiments; \textit{MULTICHECK}, a study of the multiplicity induced in charged-particle detectors by passive and active construction and environmental elements; and \textit{PIXSTREAM}, the testing, calibration and synchronisation of silicon pixel detectors as a function of beam multiplicity, geometry and energy, as part of R\&D on novel detectors for future colliders. 
 
-Highlights of the experiments in Section~\ref{sec:wp3_scientific_output}
-
-\item[INFN-LNF/SPARCLAB]
-
-The operation of SPARCLAB in the reporting period was limited because of a total of 6 months of shutdown necessary to install a consolidation/upgrade plan and for setting-up a new facility for FEL radiation production in the THz range, the SABINA project. This program was partially funded by the local Regional Government and its timeline was mandatory and could not be postponed. SPARCLAB is also the test-stand were the R\&D on plasma acceleration, which is the backbone of the laboratory flagship project EuPRAXIA, is being carried on with the highest priority. The combination of these 2 circumstances, i.e. the installation of the new facility and the high priority assigned to internal scientific program during the operation period, left essentially no-space to accommodate slots for TA. As a consequence, no TA have been provided by SPARCLAB in the reporting period.
-\end{description}
-\end{prtwo}
 
 % \separatorline{0.3em}{0.5\textwidth}{0.4pt}
 
-\begin{prtwo}
-\subparagraph{KIT-ALFA} 
-The KIT-ALFA (Accelerator Facilities) (ALFA) offers TA through the compact far-infrared linear accelerator and test experiment and ultra-short-pulse terahertz (THz) source FLUTE, and the Karlsruhe Research Accelerator (KARA), the 110-m storage ring and 2.5-GeV synchrotron radiation source.
-\end{prtwo}
+\subparagraph{KIT-ALFA} \mbox{}
 
-\begin{prtwo}
-\begin{description}
-  
-\item[KIT-FLUTE] FLUTE delivered so far no TA experiment, however several important and fundamental improvements have been made to this accelerator test facility. During the evaluation of the EURO-LABS TA proposal preparatory FLUTE experiments showed that the shot-to-shot stability, especially the pointing stability, was not sufficient for more advanced experiments. We traced this back to the low stability of the aging RF system. KIT therefore decided to completely refurbish the entire RF system. We installed a new photoinjector electron source from RadiaBeam, a new linear accelerator (linac) module from Research Instruments. We also used this occasion to install two separate RF sources and amplifiers from ScandiNova for the photoinjector and for the linac module. This renewal now allows a more precise and, above all, independent setting of parameters (energy, phase) for the photoinjector and the linac, respectively. Furthermore, we replaced the photoinjector laser system with a new and more powerful one permitting a wider range of experiments like, for instance, FLUTE experiments with split-ring resonators, that were requested by users in the past for Transnational Access.
+KIT-ALFA (Accelerator Facilities) offers TA through two facilities: the Karlsruhe Research Accelerator (KARA), a 110-m storage ring and 2.5-GeV synchrotron radiation source, and FLUTE, a compact far-infrared linear accelerator and test experiment and an ultra-short-pulse terahertz (THz) source.
 
-These necessary refurbishments of almost all fundamental components of the accelerator led unfortunately to some delays for restarting FLUTE. This was mostly due to problems with the two new klystrons, requiring several service visits by the manufacturer. After solving these issues, we could show during commissioning of the new RF system an improved stability by a factor of 10.
+\textbf{KARA} During P3, KARA operated regularly and delivered 788 AUs, bringing its total since the start of the project to 1,606 AUs, i.e. 182\% of the AUs planned in the GA, thanks to the resources reallocated from other facilities. It hosted nine TA projects, some of which returned to the facility for a second beam time, covering beam-based alignment for FCC-ee, beam stability experiments with beam-based alignment, RDP studies for FCC-ee, measurements of the photoelectron yield of accelerator vacuum material surfaces, and the analysis of photon-stimulated electron emission from Cu beam screens and functional a-C coatings for electron-cloud mitigation.
 
-After finalizing the commissioning of the linac and the bunch compressor, as well as the associated diagnostics sections with the new RF system, we are now ready to perform first TA experiments with the completely refurbished accelerator. 
-Spring 2026 we will have to dismantle FLUTE temporarily as scheduled to be able to install the novel cSTART test accelerator facility at KIT, a new storage ring in the FLUTE experimental hall. This new installation will also include a laser plasma accelerator. In parallel FLUTE will be installed again and connected to the cSTART ring, where FLUTE serves as an injector to cSTART or an independent test facility.
+\textbf{FLUTE}: FLUTE was planned to join the EURO-LABS TA offer later in the project because of scheduled upgrades. Further delays in these activities reduced the time available before the facility was dismantled in spring 2026, to be reinstalled beyond the duration of EURO-LABS as the injector for the cSTART ring. FLUTE was nevertheless able to host a single project, on a novel compact transverse deflecting system based on split-ring resonators (Compact-TDS: ISSR and TSR) for longitudinal electron bunch diagnostics, delivering 120 AUs, i.e. 36.5\% of its planned AUs. The resources freed up were reallocated to the service improvements at the facility.
 
-\item[KIT-KARA]
+\textbf{Service Improvements:} all the service improvements planned at KIT-ALFA were completed, and the new software tools were tested during some of the TA experiments carried out at KARA.
 
-KARA provided TA for 5 experiments during the reference period, delivering 598 AUs, which combined the the AUs offered in P1 make the total 818 AUs corresponding to 93\% of the total promised at the GA. 
+\underline{\em{Simulation and Measurement Framework}}: the online optics simulation based on Ocelot was extended with scripts for the automated measurement of accelerator parameters such as chromaticity, dispersion, beta function and response matrix, and tools for beam-based alignment were developed together with a TA project. For camera image processing, several open-source tools were evaluated and areaDetector\footnote{\url{https://areadetector.github.io/areaDetector/index.html}} was implemented at KARA and FLUTE. KIT also joined the Python Accelerator Middle Layer collaboration\footnote{\url{https://github.com/python-accelerator-middle-layer}} to benefit from the shared development effort. In addition, a Python measurement framework was developed to turn measurement scripts, often written ad hoc by scientists, students or operators, into reusable tools. Users only implement the preparation, the measurement loop and the post-measurement analysis, while the framework automatically generates a command-line interface, a GUI and an EPICS IOC with operator panels (CSS/Phoebus), saves the data and analysis results in HDF5 files, handles exceptions, allows measurements to be aborted and restores the machine state afterwards, without requiring any knowledge of the control system.
 
-Highlights of the experiments in Section~\ref{sec:wp3_scientific_output}
-\end{description}
-\end{prtwo}
-
-\begin{prtwo}
-On the \textbf{Service Improvements:}
-\end{prtwo}
-
-\begin{prtwo}
-\underline{\em{Simulation and Measurement Framework activities}}:  
-The frame work online optics simulation in ocelot was extended by scripts to measure automated different accelerator parameters like chromaticity, dispersion, beta function and response matrix. Further tools for different beam bases alignment  techniques are currently in development together with one TA activity. Another class of measurements are camera image processing. There different open source tools and analysis frameworks have been evaluated. It was decided to use the area Detecot (Ref: \url{https://areadetector.github.io/areaDetector/index.html}) for this application which is currently implemented at KARA and FLUTE. KIT also joined the python accelerator middle layer activities (Ref:\url{https://github.com/python-accelerator-middle-layer}) to benefit from the shared effort. The next step is to contribute to the code development and deployment of the system at KARA and FLUTE.
-\end{prtwo}
-
-\begin{prtwo}
-\underline{\em{Data Management Framework Activities}}: 
-In-depth analysis and comparison of three research data management platforms: B2Share~\footnote{https://b2share.eudat.eu/}, RADAR~\footnote{https://radar.products.fiz-karlsruhe.de/en}, and Kadi4Mat~\footnote{https://kadi.iam.kit.edu/}. This evaluation aimed to select suitable tools for managing experimental physics data effectively. Each platform was assessed based on its capabilities for data storage, accessibility, and metadata handling. Special attention was given to the ability to structure and retrieve metadata efficiently. Analyzing different experiments revealed that the metadata must be identified at an individual measurement level. This ensures precise documentation and supports reproducibility in research workflows. A flexible metadata generation schema is under preparation to accommodate diverse experimental requirements. The evaluation also considered automation possibilities to reduce manual metadata entry. Security, scalability, and integration with existing infrastructure were additional factors in the assessment. The final selection will balance usability and long-term sustainability for research environments.
-\end{prtwo}
-
-\begin{prtwo}
-Next steps: Based on the gained experience, select the most suitable tool and implement the Data Handling Framework and metadata generation. Validate the chosen solution in real-world scenarios and refine the approach based on feedback.
-\end{prtwo}
+\underline{\em{Data Management Framework}}: following an in-depth comparison of three research data management platforms, B2Share\footnote{\url{https://b2share.eudat.eu/}}, RADAR\footnote{\url{https://radar.products.fiz-karlsruhe.de/en}} and Kadi4Mat\footnote{\url{https://kadi.iam.kit.edu/}}, Kadi4Mat was selected. Developed at KIT, it is an open-source platform that combines an electronic lab notebook with a data repository and supports FAIR data practices. Records describing data, samples or devices can be grouped into collections, linked to each other and shared with users and groups through role-based permissions. Two instances were deployed: an internal one (\url{kadi.ibpt.kit.edu}), accessed with KIT accounts and connected to the KIT Large Scale Data Facility (LSDF) for large datasets, and an external read-only copy (\url{kadi-www.ibpt.kit.edu}), where external users log in with their ORCID account to access public data. The configuration was optimised for data transfer and security, and dedicated instances can be replicated for partners and collaborators.
 
 % \separatorline{0.3em}{0.5\textwidth}{0.4pt}
 
-\subparagraph{CLARA}
- 
-\begin{prtwo}
-During the reporting period, the CLARA facility has continued its reconfiguration to enable operation at \SI{250}{MeV}. 
-In parallel, the full energy beam exploitation (FEBE) experimental hutch has been assembled and major sub-assemblies such as the user experiment chambers, magnetics and light boxes have been installed. The FEBE Ti:sapphire laser system has also been commissioned, allowing the synchronised interaction of electron bunches with an approximate \SI{100}{TW} laser. 
-\end{prtwo}
+\subparagraph{STFC-CLARA} \mbox{}
 
-\begin{prtwo}
-As of March 2025, the CLARA build phase is complete and the electron gun has been successfully tested. Due to the extensive redevelopment of CLARA and delays to the operational reinstatement of the facility, the facility has not delivered any TA projects during the period. However, sub-system recommissioning and beam threading will continue through summer 2025 and it is anticipated that user beam access, including TA projects, will restart in Q3/Q4 2025.
-\end{prtwo}
+CLARA (Compact Linear Accelerator for Research and Applications), located at the STFC Daresbury Laboratory in the UK, is a high-performance, modular injector facility delivering a highly stable and customisable short-pulse electron beam to a series of test enclosures. Its principal aim is to test advanced free-electron laser (FEL) schemes that can later be implemented on existing and future short-wavelength FELs, and it is designed to support research on beam dynamics and on accelerator technology challenges in photoinjectors, RF acceleration, timing and synchronisation, beam diagnostics, controls and feedback. Electrons are accelerated to \SI{250}{\MeV} by three 4-m-long, \SI{3}{\GHz} RF accelerating structures. In addition, the Full Energy Beam Exploitation (FEBE) beamline features a 120-TW ultra-short-pulse laser, enabling unique experiments that combine high-power lasers with bright electron beams to probe novel accelerator concepts.
+
+CLARA did not provide any TA during the project. It was understood from the start that the facility would not be immediately available to TA users, but it was expected to open approximately one year into EURO-LABS. However, significant technical delays and reconfigurations of the facility, together with changing priorities in the UK science sector, substantially lengthened the commissioning period. Finally, serious safety incidents during commissioning prevented any access until the end of EURO-LABS, even though several international users had been preparing applications to use the facility.
 
 % \separatorline{0.3em}{0.5\textwidth}{0.4pt}
 
-\subparagraph{LPA UHI100} 
+\subparagraph{LPA UHI100} \mbox{}
 
-\begin{prtwo}
-No beamtime was delivered during P2 (and similarly during P1) due to delays caused by the French Nuclear Safety Authority (ASN) in granting a license for operating the facility. We are still awaiting the final operating license from ASN/CEA.
-\end{prtwo}
+One beamtime experiment (CEA-LIDYL-2026-LPA-UHI100-1) was scheduled at LPA-UHI100 for May–June 2026, following the granting of the facility's operating licence by CEA in January 2026, based on authorisation from the Nuclear Safety Authority (ASNR) in December 2025. The licence permits the production of electron bunches with energies up to \SI{200}{MeV}, charges up to \SI{300}{pC}, and a repetition rate of \SI{0.3}{Hz}.
 
-\begin{prtwo}
-The entire experimental setup, including the laser and experimental equipment, was relocated from the main CEA site at Saclay to a satellite site at Orme des Merisiers, just a few kilometers away. In order to begin full laser energy operations and deliver the laser-driven electron source, we were required to obtain a license from ASN (Nuclear Safety Authority). A temporary license was issued at the mid of 2023, valid through the end of August 2024, which limited the generating conditions to a maximum electron energy of \SI{50}{MeV}, a repetition rate of one shot per minute, and a maximum charge of \SI{15}{\pico C/bunch}, thus resulting in degraded operating conditions.
-\end{prtwo}
+The experiment was scheduled as late as possible within the EURO-LABS project timeline due to persistent cooling-water circuit issues affecting the laser and experimental areas. Although these issues were resolved in May 2026, a major air-conditioning failure interrupted the experiment during its first week, shortly after completion of most of the experimental setup. Consequently, only 16 of the 192 planned Access Units (AU) could be delivered. The system was repaired in early July, but the external users were no longer available to resume the experiment.
 
-\begin{prtwo}
-A visit by ASN was scheduled on July 3rd, 2024, to assess the operating conditions of the laboratory. Based on the feedback received during the visit, modifications were suggested, and a revised request for experimental parameters aligned with our scientific program (higher energy, repetition rate, and charge in the electron beams) was submitted.
-\end{prtwo}
+Nevertheless, EURO-LABS facilitated valuable new collaborations that are expected to continue through future projects.
 
-\begin{prtwo}
-At the end of December 2024, ASN granted CEA a temporary license for communication with our team scheduled on January 13th, 2025. This license is valid for one year and permits parameters of 200 MeV, a maximum repetition rate of \SI{0.3}{Hz}, and a maximum charge of \SI{300}{\pico C/bunch}.
-\end{prtwo}
+\textbf{Service Improvements:} As part of the service improvements, a second turbomolecular pump was installed at the LPA-UHI100 facility to increase the repetition rate and the number of shots available to users per day, while supporting machine-learning-based electron beam optimisation (WP5, Task 5.3). The upgraded system was initially tested at a maximum repetition rate of \SI{0.12}{Hz}.
 
-\begin{prtwo}
-Before proceeding with full-power operations on target, we need to conduct test experiments to verify the deposited dose by the electrons and check the consistency of simulations with the experiments. These tests are planned for March 2025, and if all conditions are met and consistent, we should be able to move forward with full-power operations on target.
-\end{prtwo}
-
-%\todo{Text to include here from Sandrine on Service Improvement}
-
-\begin{prtwo}
- On the Service Improvements, a pumping system on the main experimental chamber was implemented to be able to increase the repetition rate from \SI{0.03}{Hz} initially to higher one. We are now able to run the laser-driven source to \SI{0.1}{Hz}, improving by more than one order of magnitude. This is specially requested for Machine Learning techniques that are being implemented at that time (GeoFF toolkit developed in the context of WP5). 
-\end{prtwo}
+Budget reallocation towards the end of the project enabled further improvements to the gas delivery system, including modifications to the valves and piping and the introduction of a purge phase. These upgrades improved gas delivery to the target and residual gas evacuation from the interaction chamber through the two pumping systems and additional purge lines. As a result, the facility achieved a repetition rate of 0.3 Hz, the maximum authorised by ASNR, significantly increasing its operational capacity and the number of shots available to users.
 
 \subparagraph{Task 3.4 : Applications} \mbox{}
 
 % \todo{Briefly explain the progress of the task in context to the DoA.}
 
-\begin{prtwo}
-This task includes two facilities: the {\bf INCT/RAPID} and the {\bf CERN/CLEAR}. During the reference period both facilities were able to provide 11 TA projects, delivering 385 AUs raising the total to 643 AUs corresponding to 36\% of the promised AUs in the GA. 
-\end{prtwo}
+This task includes two application-oriented RIs: the {\bf INCT/RAPID} and the {\bf CERN/CLEAR}. During the reference period both facilities were able to host 11 TA projects, delivering 445 AUs raising the total to 1,066 AUs corresponding to 56\% of the planned AUs in the GA for the full project duration. 
 
-\begin{prtwo}
 Details are briefly described below. 
-\end{prtwo}
 
 \subsubsection*{Main Results and Achievements}
 
 % \todo{Briefly summarise the main results and achievements of the WP in context of the DoA.}
 
-\begin{prtwo}
 \subparagraph*{INCT/RAPID} 
-During P2, the INCT/RAPID facility provided access with EURO-LABS support, conducting seven projects (one of which is still ongoing) delivering 160 AUs. The experiments utilized the following instruments:
-\begin{itemize}
-\item LAE 10 accelerator with nanosecond pulse radiolysis setup – used to investigate basic mechanisms of ionizing radiation interactions in biological systems.
-\item Electronica accelerator, generating a beam of electrons with an energy of 10 MeV – for sterilization and materials modification.
-\item ILU 6 accelerator, utilizing an electron beam with energies of 1.7 MeV and < 300 keV – for controlled depth of electron range in treated products.
-\end{itemize}
-For the experiments carried out at the RAPID infrastructure, dosimetry measurements were performed by the INCT Laboratory of Technological Dose Measurements to ensure precise and accurate dose delivery to the treated samples. Additionally, other INCT infrastructure, such as Electron Paramagnetic Spectroscopy, was used to help characterize radiation-induced effects in materials.
-\end{prtwo}
+During P3, INCT/RAPID hosted ten TA projects supported by EURO-LABS, including the repetition of an experiment first carried out in P1, and delivered 405 AUs. The experiments covered a wide range of R\&D areas, from fundamental studies to applications, some of them exploring new capabilities of the facility.
 
-\begin{prtwo}
-The experiments focused on the application of electron beams to investigate the mechanisms of radical interactions, radiation-induced effects in materials, and the effects of electron beam irradiation on food and food ingredients. In the upcoming year, plans are in place to adjust the experimental setup for irradiation in the gaseous phase, in response to newly received project requests. This modification will broaden the scope of research conducted at INCT within the EURO-LABS framework.
-\end{prtwo}
+Several projects addressed food and agriculture: the effect of low-energy electron beam (LEEB) irradiation on micro-organisms in livestock feed, the optimisation of LEEB food-irradiation processes supported by Monte Carlo dosimetry, and electron-beam mutagenesis of barley seeds to improve their resilience to abiotic stress, together with the conservation of barley and wheat grains and flours. Polymer and materials research included the radiation synthesis of PVP-based nanogels and polymer nanohydrogels for drug delivery and theranostics, the crosslinking of self-assembled fatty acids on copper, the effect of irradiation on sheep-wool biopolymer composites for insulation and packaging, and a systematic comparison of gamma and electron-beam irradiation of polyethylene and polypropylene, producing a dataset for machine-learning applications. Other projects studied the conversion of CO$_2$ and CH$_4$ into syngas through electron-beam-driven methane dry reforming, and used electron nuclear double resonance spectroscopy to study Li$_4$SiO$_4$--Li$_2$TiO$_3$ ceramic breeder pebbles for fusion reactors after irradiation with \SI{10}{\MeV} electrons.
 
-\begin{prtwo}
-Highlights of the TA experiments are listed in Section~\ref{sec:wp3_scientific_output}
-\end{prtwo}
+% Original project list (kept for the highlights section)
+% \begin{itemize}
+%
+% \item Crosslinking of self-assembled fatty acids on copper by electron beam irradiation	Evaluation of crosslinking efficiacy of self-assembled fatty acids on copper by electron beam irradiation
+%
+% \item Effect of low Energy Electron Beam LEEB irradiation on livestock feed	The main objective of the project is the assessment of the effect of LEEB on naturally occurring microorganisms in livestock feed. In CNSTN Tunisia, the ionizing treatments are only performed using High Energy Electron Beam HEEB and gamma irradiation. Indeed, we need to get access to INCT infrastructure to use LEEB to irradiate food feed surfaces. In fact, livestock feed are dried products and contamination of these products is mainly occurring in surfaces. The study on the nutritional characteristics of irradiated products will be assessed to further validate this approach
+%
+% \item Converting carbon dioxide (CO2) and methane (CH4) into Syngas using Electron beam Irradiation	This project seeks to mitigate emissions gtreenhouse gases by harnessing ionizing radiation to facilitate the methane dry reforming (MDR) process, which converts CO₂ and CH₄ into syngas (CO + H₂) a vital industrial feed stock through radiolytic reactions. 
+%
+% \item Electron Beam Irradiation for Polymer Crosslinking and Advanced Nanogel Design for Drug Delivery and Theranostics approaches	The primary goal of this experiment was to synthesize PVP-based nanogels through radiation-induced polymerization in the presence of various functional comonomers—acrylic acid (AAc), APMAM, and DMAPS. 
+%
+% \item Enhancing Barley Resilience to Abiotic Stresses via Physical Mutagenesis for Sustainable Agriculture	Electron-beam irradiation was used with a dual purpose: to induce genetic variability in barley seeds for stress-response improvement and to enhance the conservation of barley and wheat grains and flours.
+%
+% \item Electron nuclear double resonance spectra measurements for biphasic Li4SiO4-Li2TiO3 ceramics after exposure to 10 MeV accelerated electrons 	dvanced ceramic breeder (ACB) pebbles, primarily composed of lithium orthosilicate (Li4SiO4) with lithium metatitanate (Li2TiO3) as a second phase, are being developed and tested as the European Union’s reference material for tritium breeding in the helium-cooled pebble bed (HCPB) blanket concept for future thermonuclear fusion reactors [Leys et al., Fusion Eng. Des., 2021]. Under operational conditions, the biphasic ACB pebbles will be subjected to extreme conditions, e.g., high-energy neutrons and other types of ionising radiation, elevated temperatures, strong magnetic fields, etc. 
+%
+% \item Experimental Optimization of Low-Energy Electron Beam Food Irradiation Processes Supported by Monte Carlo Dosimetry	This study addresses the lack of validated process models for low-energy electron beam (LEEB) surface irradiation across diverse food matrices. LEEB technology offers advantages in surface decontamination and phytosanitary treatment energy efficiency, non-thermal processing, and compatibility with in-line industrial systems but its uptake is limited by the absence of reliable dose–parameter relationships for different product geometries. 
+%
+% \item Influence of ionising radiation on sheep wool – biopolymer composites and their components for sustainable insulation and environmentally friendly packaging applications	The objective of the present work was to investigate the influence of ionising radiation on sheep wool-based biopolymer composites and their components. 
+%
+% \item Detailed Investigation of E-Beam-Induced Changes in Polyethylene and Polypropylene: A Dataset for Machine Learning Applications	Polyethylene (PE) and polypropylene (PP) are widely used polymers whose properties can be significantly modified by ionizing radiation. The extent and nature of radiation-induced crosslinking, chain scission and oxidation depend on polymer structure, absorbed dose, radiation type and the surrounding atmosphere. The purpose of this experiment was to generate a controlled experimental dataset for the systematic comparison of gamma irradiation and electron-beam (EB) irradiation of PE and PP under nitrogen and oxygen atmospheres. Using standardized 1 mm films and identical dose levels allows the effects of radiation type, dose and atmosphere to be evaluated under comparable conditions. The resulting data are intended to support the interpretation of chemical, thermal and mechanical changes and, subsequently, the development of data-driven and machine-learning approaches for predicting radiation-induced polymer modifications.
+%
+% \item Electron Beam Irradiation for the Synthesis and Modification of Polymer-Based Nanohydrogels	
+%
+% \end{itemize}
+
+Dosimetry for all experiments was provided by the INCT Laboratory of Technological Dose Measurements to ensure accurate dose delivery, and other INCT infrastructures, such as electron paramagnetic resonance (EPR) spectroscopy, were used to characterise the radiation-induced effects. Overall, these experiments, investigating radical mechanisms, radiation effects in materials, food irradiation and irradiation in the gaseous phase, broadened the scope of research conducted at INCT within EURO-LABS.
+
 
 % \separatorline{0.3em}{0.5\textwidth}{0.4pt}
 
-\subparagraph*{CERN-CLEAR Facility}
+\subparagraph*{CERN-CLEAR} \mbox{}
 
-\begin{prtwo}
-CLEAR was fully operational during the reference period able to provide TA to five experiments delivering 268 AUs, which cumulative to those delivered in P1 raise to a total of 436 AUs correspond to 36\% of the total promised at the GA. 
-The facility is heavily used for conducting research on future electron accelerators, in parallel to a rigorous research program on FLASH radiotherapy. 
-\end{prtwo}
+CLEAR is used extensively for research on future electron accelerators, alongside a rigorous research programme on FLASH radiotherapy, and has contributed to all three hands-on EURO-LABS Training Schools. During P3, the facility remained operational and hosted one additional TA project, delivering 40 AUs and bringing its cumulative total to 476 AUs, i.e.\ 40\% of the AUs planned in the GA.
 
-\begin{prtwo}
-Highlights of the TA experiments are listed in Section~\ref{sec:wp3_scientific_output}
-\end{prtwo}
+\textbf{Service Improvements:} the service improvements planned at CLEAR aim to improve the quality of measurements and data acquisition in areas critical for a large part of the users, and to increase the number of users that can access the facility per unit time. The main improvement is a new beam line, to which EURO-LABS contributed, in particular for the associated instrumentation. The new line allows a faster turn-around of experiments by minimising installation time, and provides an end-of-line experimental station with greater beam flexibility and improved handling and measurement hardware. The beam line was installed at the end of 2025, commissioned in 2026 and has since been used for experiments (see Figure~\ref{fig:wp3-clear-2ndbl-inst}).
 
-\begin{prtwo}
-On the \textbf{Service Improvements:}
-The CLEAR planned service improvements are meant to improve the quality of the measurements and of the data acquisition process in areas critical for a large part of the users and increase the number of users that can access the facility per unit time. 
-\begin{figure}[H]
-    \centering
-    % \includegraphics[width=0.78\linewidth]{graphics-pr2/CLEAR-2ndBLinstallation.jpg} \\
-    \includegraphics[width=0.60\linewidth]{graphics-pr2/CLEAR-2ndBLJan25.jpg}
-    \caption{%Top: photo during the installation of the new beam line in the CLEAR facility.
-    Photo of the new beam line of the CLEAR facility at the end of installation activities in January 2025.}
-    \label{fig:wp3-clear-2ndbl-inst}
+The items purchased with EURO-LABS funds, mainly for the end-of-line experimental area, include a beam current measurement device (ICT), an optical table, vacuum and optical components, beam screens and associated cameras, as well as drawing-office work; a new version of the C-robot sample handler was also designed, built and tested. EURO-LABS funds were further allocated to an ionisation chamber for real-time dosimetry, two vacuum chambers for the dipoles of the new beam line, and ADC, timing and other data acquisition hardware.
+
+\begin{figure}[!h]
+  \centering
+  \begin{tikzpicture}
+    % main figure
+    \node[anchor=south west, inner sep=0] (main) at (0,0)
+      {\includegraphics[width=0.9\linewidth]{graphics/WP3-CLEARsecondline.jpg}};
+    % coordinate system: (0,0) = bottom-left, (1,1) = top-right of the main figure
+    \begin{scope}[x={(main.south east)}, y={(main.north west)}]
+      \node[anchor=north east, inner sep=0, draw=black, line width=0.5pt]
+        at (0.80, 0.40)
+        {\includegraphics[width=0.30\linewidth]{graphics/WP3-CLEARsecondline-transmission.png}};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{The new beam line of the CLEAR facility, installed at the end of 2025 and commissioned in 2026. Inset: screenshot showing beam transmission from the source (Gun) to the new line (THz2), indicating a 92\% transmission efficiency.}
+  \label{fig:wp3-clear-2ndbl-inst}
 \end{figure}
-\end{prtwo}
-
-\begin{prtwo}
-The main CLEAR service improvement consist in the construction of a new beam line. This line will allow a faster turn-around of experiment, minimizing installation time, and will provide an end-of-line experimental station with added beam flexibility and improved handling/measurement hardware. The activity has been fully approved by CERN management in June 2023 and the beam line design was completed at beginning 2024. Most of hardware is being re-used from the previous CTF3 installation. Most components of the beam line have been installed in the winter shut-down 2024-2025 (see Figure~\ref{fig:wp3-clear-2ndbl-inst}).
-\end{prtwo}
-
-\begin{prtwo}
-The completion of the installation and its initial commissioning is planned for August-September 2025. Although mainly funded by CERN/CLEAR budget (total estimated cost ~ 180 kCHF), several items, in particular ones relevant for the end-of-line experimental area, have been purchased using EURO-LABS funding. These includes a beam current measurement device (ICT), an optical table, vacuum and optical components, beam screens and associated cameras, plus drawing office work. A new version of the handling C-robot was also designed, built and tested. Additional items still to be purchased using EURO-LABS funds are 1) an ionization chamber for real-time dosimetry, 2) two vacuum chambers for the two new beam line dipoles, 3) some ADC and timing modules and other acquisition and data handling hardware.
-\end{prtwo}
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=0.78\linewidth]{graphics-pr2/CLEAR-2ndBLJan25.jpg}
-%    \caption{Photo of the new beam line of the CLEAR facility at the end of January 2025.}
-%    \label{fig:wp3-clear-2ndbl}
-%\end{figure}
-
-%\todo{Add a paragraph to emphasize CLEAR's contribution to ATSOA24 and expected ATSOA25}
-
 
 \subsubsection*{Deviations and Corrective Actions}
 \label{sec:wp3_deviations}
 % \todo{Briefly summarize any deviations and performed corrective actions of the WP in context of the DoA.}
 
-\begin{prtwo}
-The WP3 facilities are currently lagging behind in providing the required number of TA projects and Access Units (AUs). By the end of P2, the facilities have collectively delivered only 26\% of the promised TA projects and 35\% of the planned AUs. However, behind this overall picture, there are significant variations between individual facilities as explained above.
-\end{prtwo}
+Budget reallocation realized following FAME and implemented later on in 2025-2026. Specifically, unused resources from INFN-LASA, INFN-THOR UU-FREIA, and XBOX were redistributed in the other facilities in the WP3 with a fraction released towards othere WPs. 
 
-\begin{prtwo}
-To address these deviations, we will continue to closely monitor the situation and propose adjustments to the allocation of project resources. Priority will be given to reallocating resources towards higher-performing facilities, first within the Task and, if necessary, across the entire Work Package. This strategy aims to maximize the overall TA delivery by supporting additional projects at facilities with greater TA capacity.
-\end{prtwo}
+This allowed the HiRadMat facility to host additional projects satisfying the increased demand and also produce high-impacy physics results and also KIT-KARA to advance on FCC-ee R\%D projects of great interest in the field. 
 
-\begin{prtwo}
-Based on present performance and future expectations we can classify the facilities as follows:
-\begin{description}
-    \item[Overperforming:] HiRadMAt, KIT/KARA. \\
-        Performing very well. Could absorb additional TA projects if needed.
-    \item[Within expectations:] LRFU-Synergium, IJCLAB-SUPRATECH, INFN-BTF, INCT-RAPID \\
-        Maintaining expected performance levels. Expected to deliver according to the original schedule. 
-    \item[Below expectations:] UU-FREIA, INF-LASA, INFN-THOR, XBOX, KIT/FLUTE, INFN-SPARCLAB, CLEAR, CEA-LPA-UHI100 and STFC-CLARA,  \\
-        Facing technical or administrative delays. In most cases, it is unlikely that the facilities will fully deliver the planned TAs; therefore, they are willing to potentially release part of the unused TA resources to support other over-performing facilities within the task or the work package.
-\end{description}
-Further details provided for selected facilities in the following paragraphs.
-\end{prtwo}
+In addition, an internal reatribution of funds in CERN-CLEAR, and CEA-LiDyl-UHI100 from released TA budget to service improvements allowed additional activities to be realized to the general long-term benefit of the users in these facilities. 
 
-% Table~\ref{tabl:wp3-deviations} summarizes the current status, with further details provided for selected facilities in the following sections.
-%\begin{table}[H]
-%    \centering
-%    \begin{tabularx}{\textwidth}{|c|X|} \hline
-%    \rowcolor{lightgray}
-%    \textbf{Facility} & \textbf{Comments} \\ \hline
-%    \multicolumn{2}{|c|}{\textbf{Overperforming}} \\ \hline
-%    HiRadMat & \multirow{2}{\hsize}{Performing very well. Could absorb additional TA projects if needed.} \\ 
-%    KIT/KARA & \\ \hline
-%   \multicolumn{2}{|c|}{\textbf{Within expectations}} \\ \hline
-%    LRFU-Synergium & \multirow{6}{\hsize}{Expected to deliver according to the original schedule. Maintaining expected performance levels.} \\ 
-%    CEA-LPA-UHI100 & \\ 
-%    STFC-CLARA & \\
-%    INFN-BTF & \\
-%    IJClab-SUPRATECH & \\
-%    INCT-RAPID & \\ \hline
-    
-%   \multicolumn{2}{|c|}{\textbf{Below expectations}} \\ \hline
-%   UU-FREIA & \multirow{6}{\hsize}{Facing technical or administrative delays. Unlikely to fully deliver the planned TAs. Accepted to release TA resources.} \\ 
-%   KIT-FLUTE & \\
-%    XBOX & \\ 
-%    INFN-LASA & \\
-%    INFN-THOR & \\
-%    INFN-SPARCLAB
-%    CLEAR & \\ \hline
-    
-%    \end{tabularx}
-%    \caption{Summary of WP3 facility status and group comments.}
-%    \label{tabl:wp3-deviations}
-%\end{table}
-
-\begin{prtwo}
-\paragraph{HiRadMat} HiRadMat has already used 82\% of its allocated 4800 Access Units (AUs) at the end of the second reference period. This high usage rate reflects the facility’s strong visibility, supported both by EURO-LABS dissemination efforts and the production of promotional videos. The remaining AUs are sufficient to cover part of the experiments planned for 2025; however, there will be no budget available to support the remaining 2025 experiments or those anticipated in 2026, the exact number of which is still uncertain.
-\end{prtwo}
-
-\begin{prtwo}
-HiRadMat would welcome additional funding to support continued transnational access, as well as user assistance with logistics and simulation efforts.
-\end{prtwo}
-
-\begin{prtwo}
-\paragraph{LPA UHI100 (CEA-LIDYL)} We have plan to deliver beamtime as much as we will be able to do. We have already a proposal from an Italian Team that should be submitted. The LPA-UHI100 facility team is considering the technical feasibility of the proposal with the applicants, before submission. And we are working on a 2nd proposal which could be the following of the 1st one, depending on the results obtained. We will keep advertising about the TNA through EUROLABS, participating to international/national conferences this year 2025.  We have already discussed with other communities and in particular physico –chemists and radiobiologists who want to use the extrem dose rate delivered by our laser-driven electron sources to test the response of biological material to such irradiations, in the context of FLASH radiotherapy, and to validate dosimeters developed for such high dose rate source.  
-\end{prtwo}
-
-\begin{prtwo}
-1 beam time project (160 hours) for 2025, in preparation for submission next march 2025, to test a temporal diagnostic adapted to the extremely short duration of the LPA electron beams. The beamtime could be allocated at the second semester of 2025.
-\end{prtwo}
-
-\begin{prtwo}
-We will try to deliver another beamtime period (160hours) in the first semester 2026, planning a maximum of 2 runs in 2026 (320hours max in 2026).
-\end{prtwo}
-
-\paragraph{INFN-LNF/(BTF, SPARCLAB)}
-
-\begin{prtwo}
-The perspectives for the completion of the EURO-LABS TA program for BTF look quite secure. The facility staff is now systematically promoting the opportunity of supported TA to the reference community, with positive returns, and 4 out of 7 TA weeks planned for the whole project have been already delivered. The staff is confident that the remaining 3 will be assigned and delivered by the end of 2025, and some space will be available to eventually accommodate 2-3 extra weeks in the 2026 before the project conclusion.
-For what concerns SPARCLAB the situation looks far less optimal. As mentioned, none of the 9 weeks of TA allocated in the project have been delivered so far, and it not realistic to think recovering all in the time left till the end of the project for the mentioned reasons. In 2025 the new facility EuAPS funded by the Next Generation EU program will be installed in the SPARCLAB bunker requiring a 4 months shutdown. In the present scenario the number of allocable TA weeks at SPARCLAB before the EURO-LABS project end in August 2026 is 2-3. The SPARCLAB staff is committed to promoting this opportunity to its international reference community.
-\end{prtwo}
-
-\paragraph{IJCLab/SUPRATECH}
-
-\begin{prtwo}
-The lower PM effort declared is due to the involvement of a temporary staff member whose salary level has not yet been properly reflected in our system. This inconsistency is being resolved with our HR department, and the related adjustments will be made in RP3.
-\end{prtwo}
+Finally an internal reallocation of TA resources in INFN-LNF allowed the BTF facility to host additional TA projects thus matching the total level of AUs planned for the lab. 
 
 \subsubsection*{Milestones and Deliverables}
 
-%{\fontsize{9}{11}\selectfont
-%\begin{center}
-%  \begin{tabular}[t]{!{\color{mygray}\vrule}p{0.10\linewidth}!
-%  {\color{mygray}\vrule}p{0.60\linewidth}!
-%  {\color{mygray}\vrule}p{0.20\linewidth}!{\color{mygray}\vrule} } \hline
-%    \rowcolor{mycyan} & {\bf Title} & {\bf Status} \\ \hline
-%    \cellcolor{mycyan}{\bf D1.x}: &  &  \\ \hline
-%  \end{tabular}
-%\end{center}
-%}
+WP3 had two Milestones and seven Deliverables in the reference period. 
 
-\begin{prtwo}
-WP3 had no Milestones or Deliverables in the reference period. 
-\end{prtwo}
+{\fontsize{9}{11}\selectfont
+\noindent
+  \begin{tabularx}{\linewidth}{!{\color{mygray}\vrule}p{0.10\linewidth}!
+  {\color{mygray}\vrule}X!
+  {\color{mygray}\vrule}p{0.10\linewidth}!{\color{mygray}\vrule} } \hline
+    \rowcolor{mycyan} & {\bf Title} & {\bf Status} \\ \hline
+
+    % milestones
+    \cellcolor{mycyan}{\bf MS18}: & Majority of TAs attributed (all tasks) & Achieved \\
+    \cellcolor{mycyan}{\bf MS20}: & Service improvements to RIs implemented (all tasks) & Achieved \\ \hline
+    % deliverables
+    \cellcolor{mycyan}{\bf D3.1}: & Report on the progress of TA for Material Testing RIs (Task 3.1) &  Achieved \\ 
+    \cellcolor{mycyan}{\bf D3.2}: & Report on the progress of TA for Technology Infrastructure RIs (Task 3.2)  &  Achieved \\
+    \cellcolor{mycyan}{\bf D3.3}: & Report on the progress of TA for Electron and Plasma Beam RIs (Task 3.3)  &  Achieved \\
+    \cellcolor{mycyan}{\bf D3.4}: & Report on the progress of TA for application-oriented RIs (Task 3.4)  &  Achieved \\ \hline
+    
+    \cellcolor{mycyan}{\bf D3.5}: & Report on the service improvement for material testing RIs (Task 3.1) &  Achieved \\
+    \cellcolor{mycyan}{\bf D3.6}: & Report on the service improvements for Technology Infrastructures RIs (Task 3.2)  &  Achieved \\
+    \cellcolor{mycyan}{\bf D3.7}: & Report on the service improvement for electron and plasma beams and application-oriented RIs (Task 3.3, 3.4)  &  Achieved \\ \hline
+  \end{tabularx}
+}
 
 \subsubsection*{Project Meetings}
 
-\begin{prtwo}
 \begin{table}[H]
     \centering
     \caption{Summary of WP3 meetings and discussed subjects.}
     {\color{black}\begin{tabularx}{\textwidth}{|c|c|X|} \hline
         \rowcolor{mycyan}
         \textbf{Date} & \textbf{Meeting} & \textbf{Subject} \\ \hline
-        2023-09-11 & TL02 - Task Leader's meeting & Regular meeting - progress report \\ \hline
-        2023-09-25 & WP3-03 Meeting & Regular WP meeting - progress report from the facilities \\ \hline
-        2023-10-11 & Special meeting LASA-THOR & Discuss status and TA possibilities \\ \hline
-        2024-01-25 & WP3-04 Meeting & Regular WP meeting - progress report from the facilities \\ \hline
-        2024-09-06 & TL03 - Task Leader's meeting & Regular meeting - progress report \\ \hline
-        2024-09-13 & WP3-05 Meeting & Regular WP meeting - progress report from the facilities \\ \hline
-        2024-10-29 & WP3-06 Meeting & Regular WP meeting - progress report from the facilities \\ \hline
-        2025-02-11 & TL04 - Task Leader's meeting & Regular meeting - progress report \\ \hline
+        2025-02-06 & Task Leaders meeting & Regular meeting - Preparation for P2 report \\ \hline
+        2025-07-02 & WP3 Meeting & Regular WP meeting - progress report and preparation of MS18, MS20 \\ \hline
+        2026-01-17 & WP3 Meeting & Regular WP meeting - progress report and preparation of deliverables D3.1-D3.4 \\ \hline
     \end{tabularx}}
     \label{tab:wp3-meetings}
 \end{table}
-Besides these remote zoom meetings, the two key WP3 meetigns were organized during the Annual Meetings of the Project, in Krakow in 2023 and at CERN in 2024, and several ad-hoc meetings with the facility coordinators and task leaders were organized via zoom, when it was necessary. 
-\end{prtwo}
-
+In addition to these remote meetings, the two main WP3 meetings took place in person during the project's general meetings: the annual meeting FAME in Ljubljana (2025) and the final meeting FINE at KIT (2026). Ad-hoc Zoom meetings with the facility coordinators and task leaders were also held whenever needed.
 
 %  {\color{mygray}\vrule}p{0.40\linewidth}!
 
